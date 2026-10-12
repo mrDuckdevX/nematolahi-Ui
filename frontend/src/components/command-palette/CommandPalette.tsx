@@ -811,7 +811,7 @@ export default function CommandPalette() {
                 {t('close')}
               </span>
             </div>
-            <span>3x-ui Command Palette</span>
+            <span>Nematolahi-UI Command Palette</span>
           </div>
         </div>
       </div>

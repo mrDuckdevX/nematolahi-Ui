@@ -3480,7 +3480,7 @@ export const SCHEMAS: Record<string, unknown> = {
     "type": "object"
   },
   "Node": {
-    "description": "Node represents a remote 3x-ui panel registered with the central panel.\nThe central panel polls each node's existing /panel/api/server/status\nendpoint over HTTP using the per-node ApiToken to populate the runtime\nstatus fields below.",
+    "description": "Node represents a remote Nematolahi-UI panel registered with the central panel.\nThe central panel polls each node's existing /panel/api/server/status\nendpoint over HTTP using the per-node ApiToken to populate the runtime\nstatus fields below.",
     "properties": {
       "activeCount": {
         "example": 23,
@@ -4449,7 +4449,7 @@ export const SCHEMAS: Record<string, unknown> = {
     "type": "object"
   },
   "Setting": {
-    "description": "Setting stores key-value configuration settings for the 3x-ui panel.",
+    "description": "Setting stores key-value configuration settings for the Nematolahi-UI panel.",
     "properties": {
       "id": {
         "type": "integer"
@@ -4487,7 +4487,7 @@ export const SCHEMAS: Record<string, unknown> = {
         "type": "string"
       },
       "link": {
-        "example": "https://acme.example/?utm_source=3x-ui",
+        "example": "https://acme.example/?utm_source=Nematolahi-UI",
         "type": "string"
       },
       "logo": {
@@ -4732,7 +4732,7 @@ export const SCHEMAS: Record<string, unknown> = {
     "type": "object"
   },
   "User": {
-    "description": "User represents a user account in the 3x-ui panel.",
+    "description": "User represents a user account in the Nematolahi-UI panel.",
     "properties": {
       "id": {
         "type": "integer"

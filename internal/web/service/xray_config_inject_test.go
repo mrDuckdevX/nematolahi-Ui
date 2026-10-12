@@ -8,13 +8,13 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/mhsanaei/3x-ui/v3/internal/amneziawg"
-	"github.com/mhsanaei/3x-ui/v3/internal/amneziawgnet"
-	"github.com/mhsanaei/3x-ui/v3/internal/database/model"
-	xuilogger "github.com/mhsanaei/3x-ui/v3/internal/logger"
-	"github.com/mhsanaei/3x-ui/v3/internal/testpg"
-	"github.com/mhsanaei/3x-ui/v3/internal/util/json_util"
-	"github.com/mhsanaei/3x-ui/v3/internal/xray"
+	"github.com/Nematolahi/nematolahi-ui/v3/internal/amneziawg"
+	"github.com/Nematolahi/nematolahi-ui/v3/internal/amneziawgnet"
+	"github.com/Nematolahi/nematolahi-ui/v3/internal/database/model"
+	xuilogger "github.com/Nematolahi/nematolahi-ui/v3/internal/logger"
+	"github.com/Nematolahi/nematolahi-ui/v3/internal/testpg"
+	"github.com/Nematolahi/nematolahi-ui/v3/internal/util/json_util"
+	"github.com/Nematolahi/nematolahi-ui/v3/internal/xray"
 
 	"github.com/op/go-logging"
 )

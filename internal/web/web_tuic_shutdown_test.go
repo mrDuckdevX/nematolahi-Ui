@@ -15,12 +15,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/mhsanaei/3x-ui/v3/internal/database"
-	"github.com/mhsanaei/3x-ui/v3/internal/database/dbtest"
-	"github.com/mhsanaei/3x-ui/v3/internal/database/model"
-	"github.com/mhsanaei/3x-ui/v3/internal/tuic"
-	"github.com/mhsanaei/3x-ui/v3/internal/web/job"
-	"github.com/mhsanaei/3x-ui/v3/internal/xray"
+	"github.com/Nematolahi/nematolahi-ui/v3/internal/database"
+	"github.com/Nematolahi/nematolahi-ui/v3/internal/database/dbtest"
+	"github.com/Nematolahi/nematolahi-ui/v3/internal/database/model"
+	"github.com/Nematolahi/nematolahi-ui/v3/internal/tuic"
+	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/job"
+	"github.com/Nematolahi/nematolahi-ui/v3/internal/xray"
 )
 
 func TestGracefulShutdownPersistsFinalTuicTraffic(t *testing.T) {

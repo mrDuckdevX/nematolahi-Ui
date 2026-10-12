@@ -7,9 +7,9 @@ package panel
 import (
 	"time"
 
-	"github.com/mhsanaei/3x-ui/v3/internal/logger"
-	"github.com/mhsanaei/3x-ui/v3/internal/util/common"
-	"github.com/mhsanaei/3x-ui/v3/internal/web/websocket"
+	"github.com/Nematolahi/nematolahi-ui/v3/internal/logger"
+	"github.com/Nematolahi/nematolahi-ui/v3/internal/util/common"
+	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/websocket"
 
 	"github.com/google/uuid"
 	ws "github.com/gorilla/websocket"

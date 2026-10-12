@@ -34,45 +34,66 @@ const initialDark = readBool(STORAGE_DARK, true);
 const initialUltra = readBool(STORAGE_ULTRA, false);
 applyDom(initialDark, initialUltra);
 
+// ── نمت‌الهی space theme ─────────────────────────────────────────────
+// Violet → cyan primary with a crimson accent, layered over deep-space black.
+const SPACE_PRIMARY = '#8b5cf6';
+const SPACE_PRIMARY_HOVER = '#a78bfa';
+const SPACE_PRIMARY_ACTIVE = '#7c3aed';
+const SPACE_ACCENT = '#ef4444';
+
 const DARK_TOKENS = {
-  colorBgBase: '#1a1b1f',
-  colorBgLayout: '#1a1b1f',
-  colorBgContainer: '#23252b',
-  colorBgElevated: '#2d2f37',
+  colorPrimary: SPACE_PRIMARY,
+  colorLink: SPACE_PRIMARY_HOVER,
+  colorInfo: '#22d3ee',
+  colorError: SPACE_ACCENT,
+  colorWarning: '#f97316',
+  colorSuccess: '#10b981',
+  colorBgBase: '#07070f',
+  colorBgLayout: '#07070f',
+  colorBgContainer: '#0e0e1d',
+  colorBgElevated: '#151528',
 };
 const ULTRA_DARK_TOKENS = {
-  colorBgBase: '#000',
-  colorBgLayout: '#000',
-  colorBgContainer: '#101013',
-  colorBgElevated: '#1a1a1e',
+  colorPrimary: SPACE_PRIMARY,
+  colorLink: SPACE_PRIMARY_HOVER,
+  colorInfo: '#22d3ee',
+  colorError: SPACE_ACCENT,
+  colorWarning: '#f97316',
+  colorSuccess: '#10b981',
+  colorBgBase: '#020207',
+  colorBgLayout: '#020207',
+  colorBgContainer: '#090914',
+  colorBgElevated: '#101022',
 };
 const DARK_LAYOUT_TOKENS = {
-  bodyBg: '#1a1b1f',
-  headerBg: '#15161a',
+  bodyBg: '#07070f',
+  headerBg: '#0b0b18',
   headerColor: '#ffffff',
-  footerBg: '#1a1b1f',
-  siderBg: '#15161a',
-  triggerBg: '#23252b',
-  triggerColor: '#ffffff',
+  footerBg: '#07070f',
+  siderBg: '#0b0b18',
+  triggerBg: '#0e0e1d',
+  triggerColor: '#c4b5fd',
 };
 const ULTRA_DARK_LAYOUT_TOKENS = {
-  bodyBg: '#000',
-  headerBg: '#050507',
+  bodyBg: '#020207',
+  headerBg: '#050510',
   headerColor: '#ffffff',
-  footerBg: '#000',
-  siderBg: '#050507',
-  triggerBg: '#1a1a1e',
-  triggerColor: '#ffffff',
+  footerBg: '#020207',
+  siderBg: '#050510',
+  triggerBg: '#090914',
+  triggerColor: '#c4b5fd',
 };
 const DARK_MENU_TOKENS = {
-  darkItemBg: '#15161a',
-  darkSubMenuItemBg: '#1a1b1f',
-  darkPopupBg: '#23252b',
+  darkItemBg: '#0b0b18',
+  darkSubMenuItemBg: '#07070f',
+  darkPopupBg: '#0e0e1d',
+  darkItemSelectedBg: SPACE_PRIMARY_ACTIVE,
 };
 const ULTRA_DARK_MENU_TOKENS = {
-  darkItemBg: '#050507',
-  darkSubMenuItemBg: '#000',
-  darkPopupBg: '#101013',
+  darkItemBg: '#050510',
+  darkSubMenuItemBg: '#020207',
+  darkPopupBg: '#090914',
+  darkItemSelectedBg: SPACE_PRIMARY_ACTIVE,
 };
 const DARK_CARD_TOKENS = {
   colorBorderSecondary: 'rgba(255, 255, 255, 0.06)',
@@ -93,9 +114,16 @@ const LIGHT_CONTRAST_TOKENS = {
   colorSuccessText: '#237804',
 };
 const LIGHT_BUTTON_TOKENS = {
-  colorPrimary: '#0958d9',
-  colorPrimaryHover: '#2468e5',
-  colorPrimaryActive: '#073ea8',
+  colorPrimary: SPACE_PRIMARY_ACTIVE,
+  colorPrimaryHover: SPACE_PRIMARY,
+  colorPrimaryActive: '#6d28d9',
+};
+
+// Shared dark-mode Button overrides — violet primary with a soft glow.
+const DARK_BUTTON_TOKENS = {
+  colorPrimary: SPACE_PRIMARY,
+  colorPrimaryHover: SPACE_PRIMARY_HOVER,
+  colorPrimaryActive: SPACE_PRIMARY_ACTIVE,
 };
 
 // hashed:false drops the `:where(.css-<hash>)` wrapper antd puts around every
@@ -133,6 +161,7 @@ export function buildAntdThemeConfig(isDark: boolean, isUltra: boolean): ThemeCo
       Menu: isUltra ? ULTRA_DARK_MENU_TOKENS : DARK_MENU_TOKENS,
       Card: isUltra ? ULTRA_DARK_CARD_TOKENS : DARK_CARD_TOKENS,
       Statistic: STATISTIC_TOKENS,
+      Button: DARK_BUTTON_TOKENS,
     },
   };
 }

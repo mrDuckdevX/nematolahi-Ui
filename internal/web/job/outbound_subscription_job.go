@@ -1,9 +1,9 @@
 package job
 
 import (
-	"github.com/mhsanaei/3x-ui/v3/internal/logger"
-	"github.com/mhsanaei/3x-ui/v3/internal/web/service"
-	"github.com/mhsanaei/3x-ui/v3/internal/web/websocket"
+	"github.com/Nematolahi/nematolahi-ui/v3/internal/logger"
+	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/service"
+	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/websocket"
 )
 
 // OutboundSubscriptionJob periodically re-fetches enabled outbound subscriptions,

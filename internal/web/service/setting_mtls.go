@@ -14,11 +14,11 @@ import (
 
 	"gorm.io/gorm"
 
-	"github.com/mhsanaei/3x-ui/v3/internal/database"
-	"github.com/mhsanaei/3x-ui/v3/internal/database/model"
-	"github.com/mhsanaei/3x-ui/v3/internal/util/common"
-	"github.com/mhsanaei/3x-ui/v3/internal/util/crypto"
-	"github.com/mhsanaei/3x-ui/v3/internal/web/runtime"
+	"github.com/Nematolahi/nematolahi-ui/v3/internal/database"
+	"github.com/Nematolahi/nematolahi-ui/v3/internal/database/model"
+	"github.com/Nematolahi/nematolahi-ui/v3/internal/util/common"
+	"github.com/Nematolahi/nematolahi-ui/v3/internal/util/crypto"
+	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/runtime"
 )
 
 var masterClientCredentialMu sync.Mutex

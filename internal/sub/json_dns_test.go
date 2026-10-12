@@ -4,9 +4,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/mhsanaei/3x-ui/v3/internal/database"
-	"github.com/mhsanaei/3x-ui/v3/internal/database/model"
-	"github.com/mhsanaei/3x-ui/v3/internal/xray"
+	"github.com/Nematolahi/nematolahi-ui/v3/internal/database"
+	"github.com/Nematolahi/nematolahi-ui/v3/internal/database/model"
+	"github.com/Nematolahi/nematolahi-ui/v3/internal/xray"
 )
 
 const dnsTestStream = `{"network":"tcp","security":"tls","tlsSettings":{"serverName":"base.sni"}}`

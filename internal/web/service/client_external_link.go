@@ -4,10 +4,10 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/mhsanaei/3x-ui/v3/internal/database"
-	"github.com/mhsanaei/3x-ui/v3/internal/database/model"
-	"github.com/mhsanaei/3x-ui/v3/internal/util/common"
-	"github.com/mhsanaei/3x-ui/v3/internal/util/link"
+	"github.com/Nematolahi/nematolahi-ui/v3/internal/database"
+	"github.com/Nematolahi/nematolahi-ui/v3/internal/database/model"
+	"github.com/Nematolahi/nematolahi-ui/v3/internal/util/common"
+	"github.com/Nematolahi/nematolahi-ui/v3/internal/util/link"
 
 	"gorm.io/gorm"
 )

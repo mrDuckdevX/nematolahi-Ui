@@ -15,9 +15,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/mhsanaei/3x-ui/v3/internal/config"
-	"github.com/mhsanaei/3x-ui/v3/internal/logger"
-	"github.com/mhsanaei/3x-ui/v3/internal/web/service"
+	"github.com/Nematolahi/nematolahi-ui/v3/internal/config"
+	"github.com/Nematolahi/nematolahi-ui/v3/internal/logger"
+	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/service"
 )
 
 // Sponsor is one paid placement published in the repo's sponsors.json.
@@ -61,8 +61,8 @@ type sponsorLogo struct {
 }
 
 var (
-	sponsorsURL     = "https://sponsors.sanaei.dev/3X/sponsors.json"
-	sponsorLogoBase = "https://sponsors.sanaei.dev/3X/logos/"
+	sponsorsURL     = "https://sponsors.nematolahi.dev/3X/sponsors.json"
+	sponsorLogoBase = "https://sponsors.nematolahi.dev/3X/logos/"
 	sponsorNow      = time.Now
 
 	// The panel proxies logos from sponsorLogoBase: CSP stays 'self' and no third party sees admin IPs.
@@ -157,7 +157,7 @@ func fetchSponsorLogo(name string) ([]byte, string, error) {
 	}
 }
 
-// readSponsorSource reads a sibling checkout of MHSanaei/sponsors under XUI_DEBUG so
+// readSponsorSource reads a sibling checkout of Nematolahi/sponsors under XUI_DEBUG so
 // sponsor edits can be previewed locally before they are pushed.
 func readSponsorSource(url, localPath string, limit int) ([]byte, error) {
 	if !config.IsDebug() {

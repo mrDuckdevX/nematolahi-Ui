@@ -17,10 +17,10 @@ import (
 
 	"golang.org/x/crypto/chacha20poly1305"
 
-	"github.com/mhsanaei/3x-ui/v3/internal/database"
-	"github.com/mhsanaei/3x-ui/v3/internal/database/dbtest"
-	"github.com/mhsanaei/3x-ui/v3/internal/database/model"
-	"github.com/mhsanaei/3x-ui/v3/internal/logger"
+	"github.com/Nematolahi/nematolahi-ui/v3/internal/database"
+	"github.com/Nematolahi/nematolahi-ui/v3/internal/database/dbtest"
+	"github.com/Nematolahi/nematolahi-ui/v3/internal/database/model"
+	"github.com/Nematolahi/nematolahi-ui/v3/internal/logger"
 )
 
 func initHappTestDB(t *testing.T) {

@@ -13,6 +13,11 @@
   background: var(--bg-page);
 }
 
+/* ── نمت‌الهی deep-space backdrop (dark mode) ─────────────────────── */
+body.dark {
+  background-color: #07070f !important;
+}
+
 .index-page.is-dark,
 .clients-page.is-dark,
 .inbounds-page.is-dark,
@@ -22,8 +27,14 @@
 .groups-page.is-dark,
 .api-docs-page.is-dark,
 .sponsors-page.is-dark {
-  --bg-page: #1a1b1f;
-  --bg-card: #23252b;
+  --bg-page: #07070f;
+  --bg-card: #0e0e1d;
+  background:
+    radial-gradient(1100px 500px at 85% -10%, rgba(139, 92, 246, 0.14), transparent 60%),
+    radial-gradient(900px 520px at -10% 20%, rgba(34, 211, 238, 0.08), transparent 55%),
+    radial-gradient(700px 420px at 55% 110%, rgba(239, 68, 68, 0.07), transparent 60%),
+    var(--bg-page);
+  background-attachment: fixed;
 }
 
 .index-page.is-dark.is-ultra,
@@ -35,8 +46,27 @@
 .groups-page.is-dark.is-ultra,
 .api-docs-page.is-dark.is-ultra,
 .sponsors-page.is-dark.is-ultra {
-  --bg-page: #000;
-  --bg-card: #101013;
+  --bg-page: #020207;
+  --bg-card: #090914;
+  background:
+    radial-gradient(1100px 500px at 85% -10%, rgba(139, 92, 246, 0.10), transparent 60%),
+    radial-gradient(900px 520px at -10% 20%, rgba(34, 211, 238, 0.06), transparent 55%),
+    radial-gradient(700px 420px at 55% 110%, rgba(239, 68, 68, 0.05), transparent 60%),
+    var(--bg-page);
+  background-attachment: fixed;
+}
+
+.index-page.is-dark.is-ultra,
+.clients-page.is-dark.is-ultra,
+.inbounds-page.is-dark.is-ultra,
+.xray-page.is-dark.is-ultra,
+.settings-page.is-dark.is-ultra,
+.nodes-page.is-dark.is-ultra,
+.groups-page.is-dark.is-ultra,
+.api-docs-page.is-dark.is-ultra,
+.sponsors-page.is-dark.is-ultra {
+  --bg-page: #020207;
+  --bg-card: #090914;
 }
 
 .index-page .ant-layout,
@@ -200,13 +230,13 @@ body.dark .ant-dropdown-menu-item-divider {
 }
 
 .hosts-page.is-dark {
-  --bg-page: #1a1b1f;
-  --bg-card: #23252b;
+  --bg-page: #07070f;
+  --bg-card: #0e0e1d;
 }
 
 .hosts-page.is-dark.is-ultra {
-  --bg-page: #000;
-  --bg-card: #101013;
+  --bg-page: #020207;
+  --bg-card: #090914;
 }
 
 .hosts-page .ant-layout,

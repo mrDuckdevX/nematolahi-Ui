@@ -10,11 +10,11 @@ import (
 
 	"github.com/op/go-logging"
 
-	"github.com/mhsanaei/3x-ui/v3/internal/amneziawgnet"
-	"github.com/mhsanaei/3x-ui/v3/internal/database"
-	"github.com/mhsanaei/3x-ui/v3/internal/database/dbtest"
-	"github.com/mhsanaei/3x-ui/v3/internal/database/model"
-	xuilogger "github.com/mhsanaei/3x-ui/v3/internal/logger"
+	"github.com/Nematolahi/nematolahi-ui/v3/internal/amneziawgnet"
+	"github.com/Nematolahi/nematolahi-ui/v3/internal/database"
+	"github.com/Nematolahi/nematolahi-ui/v3/internal/database/dbtest"
+	"github.com/Nematolahi/nematolahi-ui/v3/internal/database/model"
+	xuilogger "github.com/Nematolahi/nematolahi-ui/v3/internal/logger"
 )
 
 // the panel logger is a process-wide singleton. init it once per test
