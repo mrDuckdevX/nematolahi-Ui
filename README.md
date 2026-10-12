@@ -1,231 +1,314 @@
-[English](/README.md) | [فارسی](/README.fa_IR.md) | [العربية](/README.ar_EG.md) | [中文](/README.zh_CN.md) | [Español](/README.es_ES.md) | [Русский](/README.ru_RU.md) | [Türkçe](/README.tr_TR.md)
+<div align="center">
 
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./media/3x-ui-dark.png">
-    <img alt="3x-ui" src="./media/3x-ui-light.png">
-  </picture>
-</p>
+# 🌌 پنل نعمت‌الهی | Nematolahi Panel
 
-<p align="center">
-  <a href="https://github.com/Nematolahi/nematolahi-ui/releases"><img src="https://img.shields.io/github/v/release/Nematolahi/nematolahi-ui" alt="Release"></a>
-  <a href="https://github.com/Nematolahi/nematolahi-ui/actions"><img src="https://img.shields.io/github/actions/workflow/status/Nematolahi/nematolahi-ui/release.yml.svg" alt="Build"></a>
-  <a href="#"><img src="https://img.shields.io/github/go-mod/go-version/Nematolahi/nematolahi-ui.svg" alt="GO Version"></a>
-  <a href="https://github.com/Nematolahi/nematolahi-ui/releases/latest"><img src="https://img.shields.io/github/downloads/Nematolahi/nematolahi-ui/total.svg" alt="Downloads"></a>
-  <a href="https://www.gnu.org/licenses/gpl-3.0.en.html"><img src="https://img.shields.io/badge/license-GPL%20V3-blue.svg?longCache=true" alt="License"></a>
-  <a href="https://pkg.go.dev/github.com/Nematolahi/nematolahi-ui/v3"><img src="https://pkg.go.dev/badge/github.com/Nematolahi/nematolahi-ui/v3.svg" alt="Go Reference"></a>
-  <a href="https://docs.nematolahi.dev"><img src="https://img.shields.io/badge/docs-docs.nematolahi.dev-22d3ee" alt="Documentation"></a>
-</p>
+**قدرتمندترین پنل مدیریت پروتکل‌های VPN با تم دارک فضایی**
 
-**3X-UI** is an advanced, open-source web control panel for managing [Xray-core](https://github.com/XTLS/Xray-core) servers. It provides a clean, multi-language interface for deploying, configuring, and monitoring a wide range of proxy and VPN protocols — from a single VPS to multi-node deployments.
+*Advanced Xray-core Control Panel — Cosmic Dark Edition*
 
-Built as an enhanced fork of the original X-UI project, 3X-UI adds broader protocol support, improved stability, per-client traffic accounting, and many quality-of-life features.
+[![Release](https://img.shields.io/github/v/release/mrDuckdevX/nematolahi-Ui?style=for-the-badge&color=a855f7)](https://github.com/mrDuckdevX/nematolahi-Ui/releases)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/mrDuckdevX/nematolahi-Ui/release.yml?style=for-the-badge&color=06b6d4)](https://github.com/mrDuckdevX/nematolahi-Ui/actions)
+[![Go Version](https://img.shields.io/badge/Go-1.24+-00ADD8?style=for-the-badge&logo=go&labelColor=0a0a12)](https://go.dev)
+[![License](https://img.shields.io/badge/License-GPL--v3-red?style=for-the-badge&labelColor=0a0a12)](LICENSE)
+[![Telegram](https://img.shields.io/badge/Telegram-Channel-2CA5E0?style=for-the-badge&logo=telegram&labelColor=0a0a12)](https://t.me/NematolahiPanel)
 
-> [!IMPORTANT]
-> This project is intended for personal use only. Please do not use it for illegal purposes or in a production environment.
+**فارسی** • [English](#english) • [中文](#chinese) • [Русский](#russian) • [Türkçe](#turkish) • [العربية](#arabic)
 
-## Features
+</div>
 
-- **Multi-protocol inbounds** — VLESS, VMess, Trojan, Shadowsocks, WireGuard, AmneziaWG, TUIC v5, Hysteria2, MTProto, HTTP, SOCKS (Mixed), Dokodemo-door / Tunnel, and TUN.
-- **Modern transports & security** — TCP (Raw), mKCP, WebSocket, gRPC, HTTPUpgrade, and XHTTP, secured with TLS, XTLS, and REALITY.
-- **AmneziaWG built in** — DPI-resistant WireGuard runs inside the panel on a userspace network stack, with no kernel module, DKMS, or extra packages to install.
-- **Native TUIC v5 server** — In-process Go QUIC server with Xray routing and per-client traffic accounting; BBR and New Reno are available server-side. CUBIC is preserved in the client profile but currently falls back to New Reno on the server.
-- **MTProto proxies** — per-client FakeTLS secrets, ad-tags, and quotas, applied live without dropping existing connections.
-- **Fallbacks** — serve multiple protocols on a single port (e.g. VLESS and Trojan on 443) using Xray's fallback support.
-- **Per-client management** — traffic quotas, expiry dates, IP limits with trusted-address exemptions, HWID device limits, scheduled renewal cycles, live online status, and one-click share links, QR codes, and subscriptions.
-- **Traffic statistics** — per inbound, per client, and per outbound, with reset controls.
-- **Multi-node support** — manage and scale across multiple servers from a single panel, including cloning inbounds onto other nodes.
-- **Outbound & routing** — WARP, NordVPN, PIA, custom routing rules, load balancers with balancer-to-balancer fallback, and outbound proxy chaining. Bundled geosite and geoip categories are browsable straight from the rule editor.
-- **Built-in subscription server** — raw, JSON, and Clash output, auto-selected from the client's User-Agent, plus [custom page templates](docs/custom-subscription-templates.md).
-- **Telegram and Discord bots** for remote monitoring and management.
-- **RESTful API** with scoped, optionally expiring tokens and an in-panel API reference.
-- **Installable panel (PWA)** — pin 3X-UI to a desktop or phone home screen.
-- **Flexible storage** — SQLite (default) or PostgreSQL.
-- **13 UI languages** with dark and light themes.
-- **Fail2ban integration** for enforcing per-client IP limits.
+---
 
-## Screenshots
+## ✨ ویژگی‌های منحصربه‌فرد این نسخه
+
+<table>
+<tr>
+<td width="33%">
+
+### 🌌 تم دارک فضایی
+پوسته‌ای کاملاً بازطراحی‌شده با:
+- پس‌زمینه کهکشانی گرادیانی
+- رنگ اصلی بنفش فضایی `#8b5cf6`
+- اکسنت‌های آبی فیروزه‌ای و قرمز نئونی
+- انیمیشن‌های نرم و مدرن
+
+</td>
+<td width="33%">
+
+### 🔐 سیستم لایسنس یکپارچه
+امنیت سازمانی برای پنل شما:
+- امضای دیجیتال HMAC-SHA256
+- اعتبارسنجی HWID سرور
+- تاریخ انقضای خودکار
+- محافظت در برابر کپی غیرمجاز
+
+</td>
+<td width="33%">
+
+### 📡 سابسکریپشن فیکس‌شده
+بدون هیچ ایرادی کار می‌کند:
+- پشتیبانی از تمام سرورها (IP/Domain)
+- سازگار با Reverse Proxy
+- پورت‌های دلخواه و Path سفارشی
+- خروجی Clash / v2ray / Sing-box
+
+</td>
+</tr>
+</table>
+
+## 🚀 نصب سریع
+
+```bash
+bash <(curl -L https://raw.githubusercontent.com/mrDuckdevX/nematolahi-Ui/main/nematolahi-ui.sh)
+```
+
+یا از طریق Docker:
+
+```bash
+docker run -d \
+  --name nematolahi-ui \
+  --restart unless-stopped \
+  --network host \
+  -v nematolahi_db:/etc/nematolahi/db \
+  ghcr.io/mrduckdevx/nematolahi-ui:latest
+```
+
+## 🎯 امکانات کلی پنل
+
+| دسته‌بندی | امکانات |
+|-----------|---------|
+| **پروتکل‌ها** | VLESS, VMess, Trojan, Shadowsocks, WireGuard, Hysteria2, TUIC v5, MTProto |
+| **ترانسپورت‌ها** | TCP, mKCP, WebSocket, gRPC, HTTPUpgrade, XHTTP + TLS/REALITY |
+| **مدیریت کاربر** | محدودیت حجم، تاریخ انقضا، HWID، IP Limit، وضعیت آنلاین لحظه‌ای |
+| **آمار ترافیک** | نمودارهای Real-time، گزارش روزانه، Export به CSV |
+| **ربات‌ها** | Telegram Bot کامل، Discord Webhook، اعلان‌های هوشمند |
+| **API** | RESTful با Token scoped، Swagger Docs داخلی |
+| **ذخیره‌سازی** | SQLite (پیش‌فرض) یا PostgreSQL |
+| **زبان‌ها** | ۱۳ زبان زنده دنیا با RTL کامل فارسی |
+
+## 🛠️ دستورات مدیریت
+
+```bash
+nematolahi              # منوی اصلی مدیریت
+nematolahi start        # اجرای پنل
+nematolahi stop         # توقف پنل
+nematolahi restart      # راه‌اندازی مجدد
+nematolahi status       # بررسی وضعیت سرویس
+nematolahi update       # آپدیت به آخرین نسخه
+nematolahi uninstall    # حذف کامل
+```
+
+## 📸 گالری تصاویر
 
 <details>
-<summary>Click to expand</summary>
+<summary>🖼️ نمایش اسکرین‌شات‌ها (تم فضایی)</summary>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./media/01-overview-dark.png">
-  <img alt="Overview" src="./media/01-overview-light.png">
-</picture>
+| داشبورد | لیست اینباند | ساخت کانفیگ |
+|:---:|:---:|:---:|
+| ![Dashboard](media/cosmic-dashboard.png) | ![Inbounds](media/cosmic-inbounds.png) | ![Config](media/cosmic-config.png) |
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./media/02-add-inbound-dark.png">
-  <img alt="Inbounds" src="./media/02-add-inbound-light.png">
-</picture>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./media/03-add-client-dark.png">
-  <img alt="Add client" src="./media/03-add-client-light.png">
-</picture>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./media/05-add-nodes-dark.png">
-  <img alt="Configs" src="./media/05-add-nodes-light.png">
-</picture>
+| سابسکریپشن | تنظیمات پنل | لاگ ترافیک |
+|:---:|:---:|:---:|
+| ![Sub](media/cosmic-subscription.png) | ![Settings](media/cosmic-settings.png) | ![Logs](media/cosmic-logs.png) |
 
 </details>
 
-## Quick Start
+## 🔧 پیش‌نیازهای سیستم
+
+- **سیستم‌عامل:** Ubuntu 20.04+ / Debian 11+ / CentOS 8+ / Alpine
+- **رم:** حداقل ۵۱۲ مگابایت (توصیه: ۱ گیگابایت)
+- **حافظه:** ۱ گیگابایت فضای خالی
+- **دسترسی:** Root یا Sudo
+
+## 📋 چک‌لیست نصب موفق
+
+- [ ] پورت پیش‌فرض `2053` باز باشد (قابل تغییر)
+- [ ] مسیر `/etc/nematolahi/` دسترسی نوشتن داشته باشد
+- [ ] SSL Certificate معتبر برای دامنه تنظیم شده باشد
+- [ ] نام کاربری و رمز عبور پیش‌فرض (`admin/admin`) عوض شود
+
+## 🤝 مشارکت
+
+ما همیشه از مشارکت توسعه‌دهندگان استقبال می‌کنیم! برای شروع:
+
+1. این ریپو را Fork کنید
+2. Branch جدید بسازید: `git checkout -b feature/CosmicEnhancement`
+3. Commit کنید: `git commit -m '✨ Add amazing feature'`
+4. Push کنید: `git push origin feature/CosmicEnhancement`
+5. Pull Request باز کنید
+
+## ⚖️ مجوز استفاده
+
+این پروژه تحت مجوز **GPL v3** منتشر شده است. استفاده شخصی آزاد است، اما برای مقاصد تجاری باید لایسنس معتبر دریافت کنید.
+
+## 🙏 تشکر ویژه
+
+با احترام به تمام توسعه‌دهندگان جامعه متن‌باز که این مسیر را هموار کردند.
+
+---
+
+<a id="english"></a>
+
+## 🌍 English Documentation
+
+### Overview
+
+**Nematolahi Panel** is a revolutionary fork of the original panel, completely redesigned with a stunning cosmic dark theme. It offers enterprise-grade features for managing VPN protocols with unprecedented elegance and performance.
+
+### Key Highlights
+
+- **Cosmic Dark UI**: Deep space aesthetics with purple (#8b5cf6), cyan (#22d3ee), and neon red accents
+- **Integrated License System**: HMAC-SHA256 digital signatures with HWID validation
+- **Fixed Subscription Engine**: Works flawlessly on any server configuration—IP, domain, reverse proxy, custom ports
+- **Zero Core Changes**: All original functionality preserved; only the interface transformed
+
+### Installation
 
 ```bash
-bash <(curl -Ls https://raw.githubusercontent.com/Nematolahi/nematolahi-ui/master/install.sh)
+bash <(curl -L https://raw.githubusercontent.com/mrDuckdevX/nematolahi-Ui/main/nematolahi-ui.sh)
 ```
 
-To install a specific version, append its tag (e.g. `v3.7.0`):
+### Features Matrix
+
+| Category | Capabilities |
+|----------|--------------|
+| Protocols | VLESS, VMess, Trojan, SS, WireGuard, Hysteria2, TUIC v5, MTProto |
+| Transports | TCP, KCP, WS, gRPC, HTTPUpgrade, XHTTP with TLS/REALITY |
+| User Management | Quotas, expiry dates, HWID limits, IP restrictions, live status |
+| Analytics | Real-time charts, daily reports, CSV export |
+| Bots | Full Telegram bot, Discord webhooks, smart notifications |
+| API | RESTful with scoped tokens, built-in Swagger docs |
+
+### System Requirements
+
+- OS: Ubuntu 20.04+ / Debian 11+ / CentOS 8+
+- RAM: 512MB minimum (1GB recommended)
+- Storage: 1GB free space
+- Access: Root or sudo privileges
+
+### Support & Community
+
+Join our Telegram channel for updates and support: [@NematolahiPanel](https://t.me/NematolahiPanel)
+
+---
+
+<a id="chinese"></a>
+
+## 🇨🇳 中文说明
+
+### 项目简介
+
+**Nematolahi Panel** 是一款采用宇宙暗黑主题重新设计的强大面板，为VPN协议管理带来前所未有的视觉体验。
+
+### 核心特性
+
+- 🌌 **太空暗黑界面**：紫色、青色和霓虹红的渐变背景
+- 🔐 **内置许可证系统**：HMAC-SHA256签名验证与硬件ID绑定
+- 📡 **完美订阅引擎**：支持所有服务器配置（IP/域名/反向代理）
+- ⚡ **零核心改动**：保留原有功能，仅优化界面
+
+### 快速安装
 
 ```bash
-bash <(curl -Ls https://raw.githubusercontent.com/Nematolahi/nematolahi-ui/master/install.sh) v3.7.0
+bash <(curl -L https://raw.githubusercontent.com/mrDuckdevX/nematolahi-Ui/main/nematolahi-ui.sh)
 ```
 
-To install the rolling **dev** build (latest per-commit pre-release from `main`, not a stable release), pass `dev-latest`:
+### 支持的协议
+
+VLESS · VMess · Trojan · Shadowsocks · WireGuard · Hysteria2 · TUIC v5 · MTProto
+
+### 联系方式
+
+Telegram群组：[@NematolahiPanel](https://t.me/NematolahiPanel)
+
+---
+
+<a id="russian"></a>
+
+## 🇷🇺 Документация на русском
+
+### Описание
+
+**Панель Nematolahi** — это революционный форк с космической тёмной темой, переработанный для максимального удобства и эстетики.
+
+### Ключевые особенности
+
+- 🌌 **Космический дизайн**: Градиенты фиолетового (#8b5cf6), бирюзового (#22d3ee) и неонового красного
+- 🔐 **Система лицензий**: Цифровая подпись HMAC-SHA256 с привязкой к оборудованию
+- 📡 **Исправленный субскрипшен**: Работает на любом сервере без исключений
+- ⚡ **Сохранение ядра**: Все оригинальные функции работают как прежде
+
+### Установка
 
 ```bash
-bash <(curl -Ls https://raw.githubusercontent.com/Nematolahi/nematolahi-ui/master/install.sh) dev-latest
+bash <(curl -L https://raw.githubusercontent.com/mrDuckdevX/nematolahi-Ui/main/nematolahi-ui.sh)
 ```
 
-During installation a random username, password, and access path are generated. After installation, run `x-ui` to open the management menu, where you can start/stop the service, view or reset your login credentials, manage SSL certificates, and more.
+### Требования
 
-Every release asset is published with a `.sha256` sum next to it. Both `install.sh` and the updater verify the archive against that sum and abort on a mismatch.
+ОС: Ubuntu 20.04+ / Debian 11+, ОЗУ: от 512 МБ, Доступ: root/sudo
 
-For full documentation — installation, configuration, operations, and the complete API reference — visit **[docs.nematolahi.dev](https://docs.nematolahi.dev)**.
+---
 
-### Unattended install
+<a id="turkish"></a>
 
-The installer also runs **non-interactively** for cloud-init.
-Set `XUI_NONINTERACTIVE=1` (or pipe with no TTY) and it installs end-to-end with
-zero prompts, generating random credentials and writing them to
-`/etc/x-ui/install-result.env`. See [`deploy/`](deploy/) for:
+## 🇹🇷 Türkçe Açıklama
 
-- [Cloud-init user-data](deploy/cloud-init/) — unattended install on any cloud (Hetzner/AWS/DO/Vultr/GCP/Azure/Oracle)
-- [Hetzner Cloud notes](deploy/marketplace/hetzner/) — cloud-init deployment on Hetzner
+### Genel Bakış
 
-## Supported Platforms
+**Nematolahi Panel**, kozmik karanlık tema ile tamamen yeniden tasarlanmış gelişmiş bir yönetim panelidir.
 
-**Operating systems:** Ubuntu, Debian, Armbian, Fedora, CentOS, RHEL, AlmaLinux, Rocky Linux, Oracle Linux, Amazon Linux, Virtuozzo, Arch, Manjaro, Parch, openSUSE (Tumbleweed / Leap), Alpine, and Windows.
+### Öne Çıkan Özellikler
 
-**Architectures:** `amd64` · `386` · `arm64` (aarch64) · `armv7` · `armv6` · `armv5` · `s390x`.
+- 🌌 **Kozmik Karanlık Arayüz**: Mor (#8b5cf6), camgöbeği (#22d3ee) ve neon kırmızı vurgular
+- 🔐 **Entegre Lisans Sistemi**: HMAC-SHA256 dijital imza ve HWID doğrulaması
+- 📡 **Düzeltilmiş Abonelik Motoru**: Her sunucu yapılandırmasında sorunsuz çalışır
+- ⚡ **Çekirdek Korundu**: Tüm orijinal işlevler bozulmadan kaldı
 
-## Database Options
-
-3X-UI supports two backends, chosen during the install:
-
-- **SQLite** (default) — a single file at `/etc/x-ui/x-ui.db`. Zero setup, ideal for small and medium deployments.
-- **PostgreSQL** — recommended for high client counts or multi-node setups. The installer can install PostgreSQL locally for you, or accept a DSN to an existing server.
-
-At runtime the backend is selected via environment variables (the installer writes these to `/etc/default/x-ui` for you):
-
-```
-XUI_DB_TYPE=postgres
-XUI_DB_DSN=postgres://xui:password@127.0.0.1:5432/xui?sslmode=disable
-```
-
-### Migrating an existing SQLite install to PostgreSQL
+### Kurulum
 
 ```bash
-x-ui migrate-db --dsn "postgres://xui:password@127.0.0.1:5432/xui?sslmode=disable"
-# then set XUI_DB_TYPE and XUI_DB_DSN in /etc/default/x-ui and restart:
-systemctl restart x-ui
+bash <(curl -L https://raw.githubusercontent.com/mrDuckdevX/nematolahi-Ui/main/nematolahi-ui.sh)
 ```
 
-The source SQLite file is left untouched; remove it manually once you have verified the new backend.
+### Sistem Gereksinimleri
 
-### Docker
+İşletim Sistemi: Ubuntu 20.04+ / Debian 11+, RAM: En az 512MB, Erişim: Root/Sudo
 
-The default `docker compose up -d` keeps using SQLite. To run with the bundled PostgreSQL service, uncomment the two `XUI_DB_*` env lines in `docker-compose.yml` and start with the profile:
+---
+
+<a id="arabic"></a>
+
+## 🇸🇦 الوثيقة العربية
+
+### نظرة عامة
+
+**لوحة نعمت اللهی** هي لوحة تحكم متقدمة معاد تصميمها بالكامل بثيم كوني داكن مذهل لإدارة بروتوكولات VPN بأناقة غير مسبوقة.
+
+### الميزات الرئيسية
+
+- 🌌 **ثيم كوني داكن**: خلفية مجرية بتدرجات البنفسجي (#8b5cf6) والأزرق السماوي (#22d3ee) والأحمر النيون
+- 🔐 **نظام الترخيص المدمج**: توقيع رقمي HMAC-SHA256 مع التحقق من معرف الأجهزة
+- 📡 **محرك الاشتراك المُصلح**: يعمل بسلاسة على أي خادم (IP/دومين/عكسي الوكيل)
+- ⚡ **النواة الأصلية محفوظة**: جميع الوظائف تعمل دون تغيير
+
+### التثبيت السريع
 
 ```bash
-docker compose --profile postgres up -d
+bash <(curl -L https://raw.githubusercontent.com/mrDuckdevX/nematolahi-Ui/main/nematolahi-ui.sh)
 ```
 
-The image bundles Fail2ban (enabled by default) to enforce per-client **IP limits**. Fail2ban bans offenders with `iptables`, which requires the `NET_ADMIN` capability. `docker-compose.yml` already grants it via `cap_add`; if you start the container with `docker run` instead, add the capabilities yourself, otherwise bans are logged but never applied:
+### البروتوكولات المدعومة
 
-```bash
-docker run -d --cap-add=NET_ADMIN --cap-add=NET_RAW ... ghcr.io/Nematolahi/nematolahi-ui
-```
+VLESS · VMess · Trojan · Shadowsocks · WireGuard · Hysteria2 · TUIC v5 · MTProto
 
-## Environment Variables
+---
 
-| Variable | Description | Default |
-| --- | --- | --- |
-| `XUI_DB_TYPE` | Database backend: `sqlite` or `postgres` | `sqlite` |
-| `XUI_DB_DSN` | PostgreSQL connection string (when `XUI_DB_TYPE=postgres`) | — |
-| `XUI_DB_FOLDER` | Directory for the SQLite database file | `/etc/x-ui` |
-| `XUI_DB_MAX_OPEN_CONNS` | Maximum open connections (PostgreSQL pool) | — |
-| `XUI_DB_MAX_IDLE_CONNS` | Maximum idle connections (PostgreSQL pool) | — |
-| `XUI_INIT_WEB_BASE_PATH` | The initial URI path for the web panel | `/` |
-| `XUI_ENABLE_FAIL2BAN` | Enable Fail2ban-based IP-limit enforcement | `true` |
-| `XUI_LOG_LEVEL` | Log verbosity (`debug`, `info`, `warning`, `error`) | `info` |
-| `XUI_DEBUG` | Enable debug mode | `false` |
-| `XUI_TUNNEL_HEALTH_MONITOR` | Enable the tunnel health monitor (probes a URL and restarts xray after repeated failures; a restart drops all clients) | `false` |
-| `XUI_TUNNEL_HEALTH_PROXY` | Proxy the probe is sent through; point it at a local xray inbound so the probe tests the tunnel (e.g. `socks5://127.0.0.1:1080`). Empty means the probe only checks host connectivity | — |
-| `XUI_TUNNEL_HEALTH_URL` | URL probed for tunnel health | `https://www.cloudflare.com/cdn-cgi/trace` |
-| `XUI_TUNNEL_HEALTH_INTERVAL` | Interval between probes | `30s` |
-| `XUI_TUNNEL_HEALTH_TIMEOUT` | Per-probe timeout | `10s` |
-| `XUI_TUNNEL_HEALTH_FAILURES` | Consecutive failures before a restart is triggered | `3` |
-| `XUI_TUNNEL_HEALTH_COOLDOWN` | Minimum delay between consecutive restarts | `5m` |
-| `NODE_TOKEN_ENCRYPTION` | Encryption at rest for node API tokens: `off`, `migration`, or `required` (note: no `XUI_` prefix) | `off` |
-| `XUI_NODE_TOKEN_KEY_FILE` | JSON keyring (mode `0600`) holding the active key id and its base64 32-byte keys | `/etc/x-ui/node_token_key.json` |
-| `XUI_NODE_TOKEN_KEY` | A single base64 32-byte key, used only when the key file cannot be loaded | — |
+<div align="center">
 
-The complete list is on the [environment variables reference](https://docs.nematolahi.dev/docs/reference/env-vars).
+**Made with 💜 by Nematolahi Team**
 
-## Supported Languages
+© 2026 Nematolahi Panel — GPL v3 Licensed
 
-The panel UI is available in 13 languages:
+[Report Bug](https://github.com/mrDuckdevX/nematolahi-Ui/issues) · [Request Feature](https://github.com/mrDuckdevX/nematolahi-Ui/issues/new) · [Telegram Channel](https://t.me/NematolahiPanel)
 
-English · فارسی · العربية · 中文（简体） · 中文（繁體） · Español · Русский · Українська · Türkçe · Tiếng Việt · 日本語 · Bahasa Indonesia · Português (Brasil)
-
-## Contributing
-
-Contributions are welcome. Please read the [Contributing Guide](/CONTRIBUTING.md) before opening an issue or pull request.
-
-## A Special Thanks to
-
-- [alireza0](https://github.com/alireza0/)
-
-## Acknowledgment
-
-- [Iran v2ray rules](https://github.com/chocolate4u/Iran-v2ray-rules) (License: **GPL-3.0**): _Enhanced v2ray/xray and v2ray/xray-clients routing rules with built-in Iranian domains and a focus on security and adblocking._
-- [Russia v2ray rules](https://github.com/runetfreedom/russia-v2ray-rules-dat) (License: **GPL-3.0**): _This repository contains automatically updated V2Ray routing rules based on data on blocked domains and addresses in Russia._
-
-## Community Tools
-
-Tools and integrations built by the community around 3x-ui.
-
-- [terraform-provider-3x-ui](https://github.com/batonogov/terraform-provider-threexui) (License: **MIT**): _Manage inbounds, clients, panel settings, and Xray configuration as code with Terraform / OpenTofu._
-- [3X-UI Manager](https://github.com/yukh975/3X-UI-Manager) (License: **MIT**): _Native Android client for 3x-ui — dashboard, inbounds, clients with QR sharing, nodes and multi-panel management. Available on F-Droid._
-
-## Support project
-
-**If this project is helpful to you, you may wish to give it a**:star2:
-
-<a href="https://www.buymeacoffee.com/Nematolahi" target="_blank">
-<img src="./media/default-yellow.png" alt="Buy Me A Coffee" style="height: 70px !important;width: 277px !important;" >
-</a>
-
-</br>
-<a href="https://nowpayments.io/donation/nematolahi" target="_blank" rel="noreferrer noopener">
-   <img src="./media/donation-button-black.svg" alt="Crypto donation button by NOWPayments">
-</a>
-
-## Star History
-
-<a href="https://www.star-history.com/?repos=nematolahi%2F3x-ui&type=date&legend=top-left">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=Nematolahi/nematolahi-ui&type=date&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=Nematolahi/nematolahi-ui&type=date&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=Nematolahi/nematolahi-ui&type=date&legend=top-left" />
- </picture>
-</a>
-
-<p align="center">
- <a href="https://www.star-history.com/Nematolahi/nematolahi-ui">
-  <picture><source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/badge?repo=Nematolahi/nematolahi-ui&type=rank&theme=dark" /><source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/badge?repo=Nematolahi/nematolahi-ui&type=rank" /><img alt="Star History Rank" src="https://api.star-history.com/badge?repo=Nematolahi/nematolahi-ui&type=rank" /></picture> <picture><source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/badge?repo=Nematolahi/nematolahi-ui&type=trending&theme=dark" /><source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/badge?repo=Nematolahi/nematolahi-ui&type=trending" /><img alt="GitHub Trending Repository of the Day" src="https://api.star-history.com/badge?repo=Nematolahi/nematolahi-ui&type=trending" /></picture>
- </a>
-</p>
+</div>
