@@ -160,15 +160,25 @@ jobs:
           # depend on it. The tag comes from the release-page redirect on
           # github.com — the host the downloads need anyway — because api.github.com
           # has 503'd whole release runs while asset downloads kept working.
+          # The upstream repo ships no mtg binary, so building without a fork
+          # would fail the whole matrix on a missing dependency. If the fork is
+          # absent (no releases yet), skip packaging mtg: the panel starts fine
+          # and only the optional MTProto/FakeTLS feature stays unavailable.
           case "${{ matrix.platform }}" in
             amd64|arm64|armv7|armv6|386)
-              MTG_MULTI_VER=$(curl -sf $CURL_RETRY -o /dev/null -w '%{redirect_url}' "https://github.com/mrDuckdevX/mtg-multi/releases/latest" | sed -n 's#.*/releases/tag/##p')
-              if [ -z "$MTG_MULTI_VER" ]; then echo "could not resolve the latest mtg-multi release tag"; exit 1; fi
-              MTG_PKG="mtg-multi-${MTG_MULTI_VER#v}-linux-${{ matrix.platform }}"
-              curl -sfLRO $CURL_RETRY "https://github.com/mrDuckdevX/mtg-multi/releases/download/${MTG_MULTI_VER}/${MTG_PKG}.tar.gz"
-              tar -xzf "${MTG_PKG}.tar.gz"
-              mv "${MTG_PKG}/mtg-multi" "mtg-linux-${{ matrix.platform }}"
-              rm -rf "${MTG_PKG}" "${MTG_PKG}.tar.gz"
+              MTG_MULTI_VER=$(curl -sf $CURL_RETRY -o /dev/null -w '%{redirect_url}' "https://github.com/mrDuckdevX/mtg-multi/releases/latest" | sed -n 's#.*/releases/tag/##p') || true
+              if [ -n "$MTG_MULTI_VER" ]; then
+                MTG_PKG="mtg-multi-${MTG_MULTI_VER#v}-linux-${{ matrix.platform }}"
+                if curl -sfLRO $CURL_RETRY "https://github.com/mrDuckdevX/mtg-multi/releases/download/${MTG_MULTI_VER}/${MTG_PKG}.tar.gz"; then
+                  tar -xzf "${MTG_PKG}.tar.gz"
+                  mv "${MTG_PKG}/mtg-multi" "mtg-linux-${{ matrix.platform }}"
+                  rm -rf "${MTG_PKG}" "${MTG_PKG}.tar.gz"
+                else
+                  echo "::warning::mtg-multi asset ${MTG_PKG}.tar.gz not found; building without the MTProto sidecar"
+                fi
+              else
+                echo "::warning::mrDuckdevX/mtg-multi has no releases; building without the MTProto sidecar"
+              fi
               ;;
           esac
           cd ../..
@@ -291,17 +301,25 @@ jobs:
           Invoke-WebRequest @retry -Uri "https://github.com/runetfreedom/russia-v2ray-rules-dat/releases/latest/download/geosite.dat" -OutFile "geosite_RU.dat"
           Rename-Item xray.exe xray-windows-amd64.exe
 
-          # mtg-multi (MTProto sidecar) publishes a prebuilt Windows binary, so
-          # download and unpack it instead of compiling. The tag comes from the
-          # release-page redirect on github.com — not api.github.com, whose
-          # outages have failed release runs while asset downloads kept working.
-          $MTG_MULTI_VER = (curl.exe -sf --retry 5 --retry-all-errors --retry-delay 3 -o NUL -w '%{redirect_url}' "https://github.com/mrDuckdevX/mtg-multi/releases/latest") -replace '^.*/releases/tag/', ''
-          if (-not $MTG_MULTI_VER -or $MTG_MULTI_VER -notmatch '^v[\d.]+$') { throw "could not resolve the latest mtg-multi release tag" }
-          $MTG_PKG = "mtg-multi-$($MTG_MULTI_VER.TrimStart('v'))-windows-amd64"
-          curl.exe -sfLRO --retry 5 --retry-all-errors --retry-delay 3 "https://github.com/mrDuckdevX/mtg-multi/releases/download/$MTG_MULTI_VER/$MTG_PKG.zip"
-          Expand-Archive -Path "$MTG_PKG.zip" -DestinationPath "mtg-tmp" -Force
-          Move-Item "mtg-tmp/$MTG_PKG/mtg-multi.exe" "mtg-windows-amd64.exe"
-          Remove-Item -Recurse -Force "mtg-tmp", "$MTG_PKG.zip"
+          # mtg-multi is optional: the panel runs without it (only MTProto/FakeTLS
+          # inbounds are unavailable). If the fork has no releases, skip packaging.
+          $MTG_MULTI_VER = $null
+          try {
+            $MTG_MULTI_VER = ((curl.exe -sf --retry 5 --retry-all-errors --retry-delay 3 -o NUL -w '%{redirect_url}' "https://github.com/mrDuckdevX/mtg-multi/releases/latest") -replace '^.*/releases/tag/', '')
+          } catch {}
+          if ($MTG_MULTI_VER -match '^v[\d.]+$') {
+            $MTG_PKG = "mtg-multi-$($MTG_MULTI_VER.TrimStart('v'))-windows-amd64"
+            try {
+              curl.exe -sfLRO --retry 5 --retry-all-errors --retry-delay 3 "https://github.com/mrDuckdevX/mtg-multi/releases/download/$MTG_MULTI_VER/$MTG_PKG.zip"
+              Expand-Archive -Path "$MTG_PKG.zip" -DestinationPath "mtg-tmp" -Force
+              Move-Item "mtg-tmp/$MTG_PKG/mtg-multi.exe" "mtg-windows-amd64.exe"
+              Remove-Item -Recurse -Force "mtg-tmp", "$MTG_PKG.zip"
+            } catch {
+              Write-Warning "mtg-multi windows asset not found; building without the MTProto sidecar"
+            }
+          } else {
+            Write-Warning "mrDuckdevX/mtg-multi has no releases; building without the MTProto sidecar"
+          }
 
           cd ..
           Copy-Item -Path ..\windows_files\* -Destination . -Recurse
