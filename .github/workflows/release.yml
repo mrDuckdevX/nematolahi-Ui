@@ -303,6 +303,7 @@ jobs:
 
           # mtg-multi is optional: the panel runs without it (only MTProto/FakeTLS
           # inbounds are unavailable). If the fork has no releases, skip packaging.
+          $ErrorActionPreference = 'Continue'
           $MTG_MULTI_VER = $null
           try {
             $MTG_MULTI_VER = ((curl.exe -sf --retry 5 --retry-all-errors --retry-delay 3 -o NUL -w '%{redirect_url}' "https://github.com/mrDuckdevX/mtg-multi/releases/latest") -replace '^.*/releases/tag/', '')
@@ -311,6 +312,7 @@ jobs:
             $MTG_PKG = "mtg-multi-$($MTG_MULTI_VER.TrimStart('v'))-windows-amd64"
             try {
               curl.exe -sfLRO --retry 5 --retry-all-errors --retry-delay 3 "https://github.com/mrDuckdevX/mtg-multi/releases/download/$MTG_MULTI_VER/$MTG_PKG.zip"
+              if ($LASTEXITCODE -ne 0) { throw "curl exited $LASTEXITCODE" }
               Expand-Archive -Path "$MTG_PKG.zip" -DestinationPath "mtg-tmp" -Force
               Move-Item "mtg-tmp/$MTG_PKG/mtg-multi.exe" "mtg-windows-amd64.exe"
               Remove-Item -Recurse -Force "mtg-tmp", "$MTG_PKG.zip"
@@ -320,6 +322,7 @@ jobs:
           } else {
             Write-Warning "mrDuckdevX/mtg-multi has no releases; building without the MTProto sidecar"
           }
+          $ErrorActionPreference = 'Stop'
 
           cd ..
           Copy-Item -Path ..\windows_files\* -Destination . -Recurse
