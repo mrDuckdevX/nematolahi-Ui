@@ -1,5 +1,5 @@
 name: Question
-description: Ask how to do something with 3x-ui
+description: Ask how to do something with nematolahi-ui
 title: "[Question]: "
 labels: ["question"]
 
@@ -43,7 +43,7 @@ body:
   - type: input
     id: xui-version
     attributes:
-      label: 3x-ui version
+      label: nematolahi-ui version
       description: Shown at the top of the panel sidebar.
       placeholder: 3.1.0
     validations:
@@ -52,7 +52,7 @@ body:
   - type: dropdown
     id: install-method
     attributes:
-      label: How did you install 3x-ui?
+      label: How did you install nematolahi-ui?
       options:
         - install.sh script
         - Docker / Docker Compose

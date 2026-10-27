@@ -33,7 +33,7 @@ type InboundProvider interface {
 func (s *DiscordService) BuildReport(ctx context.Context, server ServerProvider, inbound InboundProvider) (MessagePayload, []FileAttachment, error) {
 	hostname, _ := os.Hostname()
 	if hostname == "" {
-		hostname = "3x-ui"
+		hostname = "nematolahi-ui"
 	}
 
 	var status *service.Status

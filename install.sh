@@ -1844,7 +1844,7 @@ install_x-ui() {
         exit 1
     fi
     chmod +x x-ui
-    chmod +x x-ui.sh
+    chmod +x nematolahi-ui.sh
 
     # Check the system's architecture and rename the file accordingly.
     # The panel binary maps GOARCH=arm to "arm32" (internal/xray/process.go),

@@ -1,4 +1,4 @@
-name: Release 3X-UI for Docker
+name: Release Nematolahi-UI for Docker
 
 permissions:
   contents: read
@@ -24,7 +24,6 @@ jobs:
         uses: docker/metadata-action@v6
         with:
           images: |
-            nematolahii/3x-ui
             ghcr.io/Nematolahi/nematolahi-ui
           tags: |
             type=ref,event=branch

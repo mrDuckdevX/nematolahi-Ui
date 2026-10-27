@@ -14,7 +14,7 @@ question it already answers.
 
 ## Stack
 
-3x-ui is an open-source web control panel for managing Xray-core servers.
+nematolahi-ui is an open-source web control panel for managing Xray-core servers.
 
 - Backend: Go 1.27, module `github.com/Nematolahi/nematolahi-ui/v3`, Gin and GORM.
 - It runs Xray-core as a managed child process (`internal/xray/process.go`) and
