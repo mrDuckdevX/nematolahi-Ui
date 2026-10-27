@@ -431,9 +431,9 @@ func fetchLatestPanelVersion() (string, error) {
 // fetchPanelRelease fetches a release from GitHub. An empty tag resolves the
 // latest stable release; a non-empty tag (e.g. dev-latest) resolves that tag.
 func fetchPanelRelease(tag string) (*service.Release, error) {
-	url := "https://api.github.com/repos/mrDuckdevX/nematolahi-ui/releases/latest"
+	url := "https://api.github.com/repos/mrDuckdevX/nematolahi-Ui/releases/latest"
 	if tag != "" {
-		url = "https://api.github.com/repos/mrDuckdevX/nematolahi-ui/releases/tags/" + tag
+		url = "https://api.github.com/repos/mrDuckdevX/nematolahi-Ui/releases/tags/" + tag
 	}
 	client := (&service.SettingService{}).NewProxiedHTTPClient(10 * time.Second)
 	req, reqErr := http.NewRequestWithContext(context.Background(), http.MethodGet, url, nil)
