@@ -213,11 +213,11 @@ replace_xui_script() {
 installed_script_url() {
     local ver
     ver=$("${xui_folder}/x-ui" -v 2> /dev/null | tr -d '[:space:]')
-    if [[ "$ver" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]] && curl -fsIL -o /dev/null "https://raw.githubusercontent.com/Nematolahi/nematolahi-ui/v${ver}/x-ui.sh"; then
-        echo "https://raw.githubusercontent.com/Nematolahi/nematolahi-ui/v${ver}/x-ui.sh"
+    if [[ "$ver" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]] && curl -fsIL -o /dev/null "https://raw.githubusercontent.com/Nematolahi/nematolahi-ui/v${ver}/nematolahi-ui.sh"; then
+        echo "https://raw.githubusercontent.com/Nematolahi/nematolahi-ui/v${ver}/nematolahi-ui.sh"
     else
         echo -e "${yellow}No x-ui.sh published for the installed version (${ver:-unknown}), using main${plain}" >&2
-        echo "https://raw.githubusercontent.com/Nematolahi/nematolahi-ui/main/x-ui.sh"
+        echo "https://raw.githubusercontent.com/Nematolahi/nematolahi-ui/main/nematolahi-ui.sh"
     fi
 }
 

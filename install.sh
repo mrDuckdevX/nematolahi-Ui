@@ -1768,12 +1768,12 @@ install_x-ui() {
     fi
     # The unit files are only fetched when the release tarball lacks them, so
     # they are checked at that point instead of here.
-    local required_files=("x-ui.sh")
-    [[ $release == "alpine" ]] && required_files+=("x-ui.rc")
+    local required_files=("nematolahi-ui.sh")
+    [[ $release == "alpine" ]] && required_files+=("nematolahi-ui.rc")
     require_repo_files "${script_ref}" "${required_files[@]}"
     local xui_script_temp="/usr/bin/x-ui-temp.$$"
     rm -f "${xui_script_temp}"
-    curl -fLRo "${xui_script_temp}" "https://raw.githubusercontent.com/Nematolahi/nematolahi-ui/${script_ref}/x-ui.sh"
+    curl -fLRo "${xui_script_temp}" "https://raw.githubusercontent.com/Nematolahi/nematolahi-ui/${script_ref}/nematolahi-ui.sh"
     if [[ $? -ne 0 ]]; then
         rm -f "${xui_script_temp}"
         echo -e "${red}Failed to download x-ui.sh${plain}"
@@ -1928,7 +1928,7 @@ install_x-ui() {
     if [[ $release == "alpine" ]]; then
         xui_rc_temp="/etc/init.d/x-ui.tmp.$$"
         rm -f "${xui_rc_temp}"
-        curl -fLRo "${xui_rc_temp}" "https://raw.githubusercontent.com/Nematolahi/nematolahi-ui/${script_ref}/x-ui.rc"
+        curl -fLRo "${xui_rc_temp}" "https://raw.githubusercontent.com/Nematolahi/nematolahi-ui/${script_ref}/nematolahi-ui.rc"
         if [[ $? -ne 0 ]]; then
             rm -f "${xui_rc_temp}"
             echo -e "${red}Failed to download x-ui.rc${plain}"
@@ -1993,13 +1993,13 @@ install_x-ui() {
             echo -e "${yellow}Service files not found in tar.gz, downloading from GitHub...${plain}"
             case "${release}" in
                 ubuntu | debian | armbian)
-                    service_unit_url="https://raw.githubusercontent.com/Nematolahi/nematolahi-ui/${script_ref}/x-ui.service.debian"
+                    service_unit_url="https://raw.githubusercontent.com/Nematolahi/nematolahi-ui/${script_ref}/nematolahi-ui.service.debian"
                     ;;
                 arch | manjaro | parch)
-                    service_unit_url="https://raw.githubusercontent.com/Nematolahi/nematolahi-ui/${script_ref}/x-ui.service.arch"
+                    service_unit_url="https://raw.githubusercontent.com/Nematolahi/nematolahi-ui/${script_ref}/nematolahi-ui.service.arch"
                     ;;
                 *)
-                    service_unit_url="https://raw.githubusercontent.com/Nematolahi/nematolahi-ui/${script_ref}/x-ui.service.rhel"
+                    service_unit_url="https://raw.githubusercontent.com/Nematolahi/nematolahi-ui/${script_ref}/nematolahi-ui.service.rhel"
                     ;;
             esac
 

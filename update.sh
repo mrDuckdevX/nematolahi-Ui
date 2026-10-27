@@ -532,8 +532,8 @@ update_x-ui() {
     fi
     # The unit files are only fetched when the release tarball lacks them, so
     # they are checked at that point instead of here.
-    local required_files=("x-ui.sh")
-    [[ $release == "alpine" ]] && required_files+=("x-ui.rc")
+    local required_files=("nematolahi-ui.sh")
+    [[ $release == "alpine" ]] && required_files+=("nematolahi-ui.rc")
     require_repo_files "${script_ref}" "${required_files[@]}"
     ${curl_bin} -fLRo ${xui_folder}-linux-$(arch).tar.gz https://github.com/Nematolahi/nematolahi-ui/releases/download/${tag_version}/x-ui-linux-$(arch).tar.gz 2> /dev/null
     if [[ $? -ne 0 ]]; then
@@ -653,7 +653,7 @@ update_x-ui() {
     echo -e "${green}Downloading and installing x-ui.sh script...${plain}"
     local xui_script_temp="/usr/bin/x-ui-temp.$$"
     rm -f "${xui_script_temp}"
-    ${curl_bin} -fLRo "${xui_script_temp}" "https://raw.githubusercontent.com/Nematolahi/nematolahi-ui/${script_ref}/x-ui.sh" > /dev/null 2>&1
+    ${curl_bin} -fLRo "${xui_script_temp}" "https://raw.githubusercontent.com/Nematolahi/nematolahi-ui/${script_ref}/nematolahi-ui.sh" > /dev/null 2>&1
     if [[ $? -ne 0 ]]; then
         rm -f "${xui_script_temp}"
         _fail "ERROR: Failed to download x-ui.sh script, please be sure that your server can access GitHub"
@@ -689,7 +689,7 @@ update_x-ui() {
         echo -e "${green}Downloading and installing startup unit x-ui.rc...${plain}"
         xui_rc_temp="/etc/init.d/x-ui.tmp.$$"
         rm -f "${xui_rc_temp}"
-        ${curl_bin} -fLRo "${xui_rc_temp}" "https://raw.githubusercontent.com/Nematolahi/nematolahi-ui/${script_ref}/x-ui.rc" > /dev/null 2>&1
+        ${curl_bin} -fLRo "${xui_rc_temp}" "https://raw.githubusercontent.com/Nematolahi/nematolahi-ui/${script_ref}/nematolahi-ui.rc" > /dev/null 2>&1
         if [[ $? -ne 0 ]]; then
             rm -f "${xui_rc_temp}"
             _fail "ERROR: Failed to download startup unit x-ui.rc, please be sure that your server can access GitHub"
@@ -748,13 +748,13 @@ update_x-ui() {
                 echo -e "${yellow}Service files not found in tar.gz, downloading from GitHub...${plain}"
                 case "${release}" in
                     ubuntu | debian | armbian)
-                        service_unit_url="https://raw.githubusercontent.com/Nematolahi/nematolahi-ui/${script_ref}/x-ui.service.debian"
+                        service_unit_url="https://raw.githubusercontent.com/Nematolahi/nematolahi-ui/${script_ref}/nematolahi-ui.service.debian"
                         ;;
                     arch | manjaro | parch)
-                        service_unit_url="https://raw.githubusercontent.com/Nematolahi/nematolahi-ui/${script_ref}/x-ui.service.arch"
+                        service_unit_url="https://raw.githubusercontent.com/Nematolahi/nematolahi-ui/${script_ref}/nematolahi-ui.service.arch"
                         ;;
                     *)
-                        service_unit_url="https://raw.githubusercontent.com/Nematolahi/nematolahi-ui/${script_ref}/x-ui.service.rhel"
+                        service_unit_url="https://raw.githubusercontent.com/Nematolahi/nematolahi-ui/${script_ref}/nematolahi-ui.service.rhel"
                         ;;
                 esac
 
