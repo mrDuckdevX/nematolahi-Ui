@@ -3,7 +3,7 @@ package runtime
 import (
 	"testing"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/database/model"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/database/model"
 )
 
 // Only a later call for the same node pruned its pooled client, so a deleted

@@ -11,13 +11,13 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/database"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/database/dbtest"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/database/model"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/util/crypto"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/locale"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/service"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/service/discord"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/database"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/database/dbtest"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/database/model"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/util/crypto"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/locale"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/service"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/service/discord"
 )
 
 func TestValidateRegex(t *testing.T) {

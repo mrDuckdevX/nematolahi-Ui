@@ -15,9 +15,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/config"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/logger"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/service"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/config"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/logger"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/service"
 )
 
 // Sponsor is one paid placement published in the repo's sponsors.json.

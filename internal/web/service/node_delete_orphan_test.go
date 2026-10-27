@@ -3,7 +3,7 @@ package service
 import (
 	"testing"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/database/model"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/database/model"
 )
 
 // TestNodeDelete_BlocksWhenInboundsAttached guards DB-002: a node that still

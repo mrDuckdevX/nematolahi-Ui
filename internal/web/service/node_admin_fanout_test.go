@@ -13,8 +13,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/database"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/database/model"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/database"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/database/model"
 )
 
 // fanoutGate holds every node call open until released, so a test sees how many

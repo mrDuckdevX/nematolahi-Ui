@@ -8,8 +8,8 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/config"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/database"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/config"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/database"
 )
 
 var migrated struct {

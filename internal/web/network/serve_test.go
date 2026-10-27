@@ -13,7 +13,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/logger"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/logger"
 )
 
 type failingListener struct{ err error }

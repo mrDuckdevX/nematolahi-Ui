@@ -9,12 +9,12 @@ import (
 
 	"github.com/op/go-logging"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/amneziawg"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/amneziawgnet"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/database"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/database/model"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/logger"
-	wgutil "github.com/Nematolahi/nematolahi-ui/v3/internal/util/wireguard"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/amneziawg"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/amneziawgnet"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/database"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/database/model"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/logger"
+	wgutil "github.com/mrDuckdevX/nematolahi-Ui/v3/internal/util/wireguard"
 )
 
 // A real X25519 pair, so PublicKeyFromPrivate agrees with the stored value.

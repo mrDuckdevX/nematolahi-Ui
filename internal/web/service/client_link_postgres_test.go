@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/database/model"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/xray"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/database/model"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/xray"
 )
 
 // PostgreSQL before 16 rejects a FROM subquery without an alias, so the TUIC

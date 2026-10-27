@@ -8,8 +8,8 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/logger"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/service"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/logger"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/service"
 )
 
 var warnSuppressedForwardedOnce sync.Once

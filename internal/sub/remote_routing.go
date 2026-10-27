@@ -16,11 +16,11 @@ import (
 
 	yaml "github.com/goccy/go-yaml"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/database"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/database/model"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/logger"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/util/common"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/util/netsafe"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/database"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/database/model"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/logger"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/util/common"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/util/netsafe"
 )
 
 // Remote sources reuse the existing settings fields (one HTTPS URL = remote,

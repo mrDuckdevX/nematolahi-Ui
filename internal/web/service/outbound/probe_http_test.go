@@ -16,7 +16,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/xray"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/xray"
 )
 
 // stubProcess implements batchProcess without an xray binary. When serveSocks

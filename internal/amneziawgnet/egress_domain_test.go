@@ -19,8 +19,8 @@ import (
 
 	"github.com/amnezia-vpn/amneziawg-go/v3/device"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/amneziawg"
-	wgutil "github.com/Nematolahi/nematolahi-ui/v3/internal/util/wireguard"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/amneziawg"
+	wgutil "github.com/mrDuckdevX/nematolahi-Ui/v3/internal/util/wireguard"
 )
 
 func verboseLoggerForTest(prefix string) *device.Logger {

@@ -16,7 +16,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/util/maskcompat"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/util/maskcompat"
 )
 
 // Outbound is the minimal shape we emit for each parsed link.

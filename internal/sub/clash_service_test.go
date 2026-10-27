@@ -5,9 +5,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/amneziawg"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/database/model"
-	wgutil "github.com/Nematolahi/nematolahi-ui/v3/internal/util/wireguard"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/amneziawg"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/database/model"
+	wgutil "github.com/mrDuckdevX/nematolahi-Ui/v3/internal/util/wireguard"
 )
 
 func TestEnsureUniqueProxyNames(t *testing.T) {

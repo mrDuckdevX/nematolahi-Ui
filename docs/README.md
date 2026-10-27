@@ -11,13 +11,13 @@
 
 <p align="center">
   The official documentation and product site for
-  <a href="https://github.com/Nematolahi/nematolahi-ui"><b>3x-ui</b></a> —
+  <a href="https://github.com/mrDuckdevX/nematolahi-Ui"><b>3x-ui</b></a> —
   an advanced web panel for managing Xray-core servers.
 </p>
 
 <p align="center">
   <a href="https://docs.nematolahi.dev"><img src="https://img.shields.io/badge/docs-docs.nematolahi.dev-22d3ee?style=flat-square" alt="Live site" /></a>
-  <a href="https://github.com/Nematolahi/nematolahi-ui/actions/workflows/docs-ci.yml"><img src="https://github.com/Nematolahi/nematolahi-ui/actions/workflows/docs-ci.yml/badge.svg" alt="CI" /></a>
+  <a href="https://github.com/mrDuckdevX/nematolahi-Ui/actions/workflows/docs-ci.yml"><img src="https://github.com/mrDuckdevX/nematolahi-Ui/actions/workflows/docs-ci.yml/badge.svg" alt="CI" /></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-GPL--3.0-blue?style=flat-square" alt="License: GPL-3.0" /></a>
   <img src="https://img.shields.io/badge/Next.js-16-black?style=flat-square&logo=next.js" alt="Next.js 16" />
   <img src="https://img.shields.io/badge/Fumadocs-16-0ea5e9?style=flat-square" alt="Fumadocs 16" />
@@ -31,7 +31,7 @@
 
 ## Overview
 
-This directory (`docs/` in the [3x-ui](https://github.com/Nematolahi/nematolahi-ui) monorepo) contains
+This directory (`docs/` in the [3x-ui](https://github.com/mrDuckdevX/nematolahi-Ui) monorepo) contains
 the source for [docs.nematolahi.dev](https://docs.nematolahi.dev) — a static-first documentation and
 marketing site built with [Fumadocs](https://fumadocs.dev) on Next.js. It has **no backend,
 no database, and no auth**: every page is prerendered and every tool runs entirely in the

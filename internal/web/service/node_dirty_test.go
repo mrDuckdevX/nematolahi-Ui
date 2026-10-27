@@ -6,9 +6,9 @@ import (
 
 	"gorm.io/gorm"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/database"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/database/model"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/runtime"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/database"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/database/model"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/runtime"
 )
 
 // While a node is config-dirty (a local edit committed before it could be

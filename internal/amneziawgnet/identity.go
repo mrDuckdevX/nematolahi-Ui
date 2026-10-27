@@ -3,7 +3,7 @@ package amneziawgnet
 import (
 	"net/netip"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/amneziawg"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/amneziawg"
 )
 
 // PeerIndex resolves a decapsulated connection's tunnel-internal source

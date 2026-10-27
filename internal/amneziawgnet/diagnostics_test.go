@@ -12,8 +12,8 @@ import (
 	"github.com/amnezia-vpn/amneziawg-go/v3/tun/netstack"
 	"gvisor.dev/gvisor/pkg/tcpip/adapters/gonet"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/amneziawg"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/util/wireguard"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/amneziawg"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/util/wireguard"
 )
 
 func TestDiagnoseNoRunningInstance(t *testing.T) {

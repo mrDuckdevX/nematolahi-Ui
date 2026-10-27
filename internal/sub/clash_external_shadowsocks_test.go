@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/database/model"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/database/model"
 )
 
 // Clash has no shadowsocks tcp/http header, so the inbound path drops the node

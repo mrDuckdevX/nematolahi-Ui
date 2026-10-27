@@ -3,7 +3,7 @@ package service
 import (
 	"time"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/xray"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/xray"
 )
 
 // nextCalendarRenewal returns the next renewal strictly after from, at midnight

@@ -4,9 +4,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/amneziawg"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/amneziawg"
 
-	wgutil "github.com/Nematolahi/nematolahi-ui/v3/internal/util/wireguard"
+	wgutil "github.com/mrDuckdevX/nematolahi-Ui/v3/internal/util/wireguard"
 )
 
 // clientDeviceTestInstance builds a minimal valid client instance with one

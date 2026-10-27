@@ -1,8 +1,8 @@
 package job
 
 import (
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/service"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/service/tgbot"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/service"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/service/tgbot"
 )
 
 // LoginStatus represents the status of a login attempt.

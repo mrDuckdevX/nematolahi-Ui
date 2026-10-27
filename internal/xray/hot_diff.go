@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"encoding/json"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/logger"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/util/json_util"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/logger"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/util/json_util"
 )
 
 // HotDiff describes the gRPC API operations needed to bring a running Xray

@@ -5,9 +5,9 @@ import (
 	"path"
 	"strings"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/entity"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/middleware"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/session"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/entity"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/middleware"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/session"
 
 	"github.com/gin-gonic/gin"
 )

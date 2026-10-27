@@ -12,9 +12,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/database"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/global"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/xray"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/database"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/global"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/xray"
 
 	"github.com/gin-gonic/gin"
 )

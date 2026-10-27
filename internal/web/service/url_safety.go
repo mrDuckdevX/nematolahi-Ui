@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/util/netsafe"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/util/netsafe"
 )
 
 // SanitizeHTTPURL validates and normalizes an http(s) URL without resolving

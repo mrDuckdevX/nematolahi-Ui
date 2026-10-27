@@ -4,11 +4,11 @@ import (
 	"encoding/json"
 	"time"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/logger"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/service"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/service/outbound"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/websocket"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/xray"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/logger"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/service"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/service/outbound"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/websocket"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/xray"
 
 	"github.com/valyala/fasthttp"
 )

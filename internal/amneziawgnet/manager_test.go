@@ -9,8 +9,8 @@ import (
 
 	"github.com/amnezia-vpn/amneziawg-go/v3/device"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/amneziawg"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/util/wireguard"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/amneziawg"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/util/wireguard"
 )
 
 // TestManagerLifecycle exercises Ensure/Reconcile's reconfigure-in-place vs.

@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/util/netsafe"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/util/netsafe"
 )
 
 // dnsAllowRuleTag marks the routing rules this file manages. Both

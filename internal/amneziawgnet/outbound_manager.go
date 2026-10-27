@@ -5,8 +5,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/amneziawg"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/logger"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/amneziawg"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/logger"
 )
 
 // OutboundDesired pairs an instance with inbound-path DeviceOptions; AWG

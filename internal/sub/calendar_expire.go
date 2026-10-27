@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/xray"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/xray"
 )
 
 func (s *SubService) subscriptionUserinfo(traffic xray.ClientTraffic) string {

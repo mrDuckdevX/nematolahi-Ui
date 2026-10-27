@@ -8,12 +8,12 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Nematolahi/nematolahi-ui/releases"><img src="https://img.shields.io/github/v/release/Nematolahi/nematolahi-ui" alt="Release"></a>
-  <a href="https://github.com/Nematolahi/nematolahi-ui/actions"><img src="https://img.shields.io/github/actions/workflow/status/Nematolahi/nematolahi-ui/release.yml.svg" alt="Build"></a>
-  <a href="#"><img src="https://img.shields.io/github/go-mod/go-version/Nematolahi/nematolahi-ui.svg" alt="GO Version"></a>
-  <a href="https://github.com/Nematolahi/nematolahi-ui/releases/latest"><img src="https://img.shields.io/github/downloads/Nematolahi/nematolahi-ui/total.svg" alt="Downloads"></a>
+  <a href="https://github.com/mrDuckdevX/nematolahi-Ui/releases"><img src="https://img.shields.io/github/v/release/mrDuckdevX/nematolahi-Ui" alt="Release"></a>
+  <a href="https://github.com/mrDuckdevX/nematolahi-Ui/actions"><img src="https://img.shields.io/github/actions/workflow/status/mrDuckdevX/nematolahi-Ui/release.yml.svg" alt="Build"></a>
+  <a href="#"><img src="https://img.shields.io/github/go-mod/go-version/mrDuckdevX/nematolahi-Ui.svg" alt="GO Version"></a>
+  <a href="https://github.com/mrDuckdevX/nematolahi-Ui/releases/latest"><img src="https://img.shields.io/github/downloads/mrDuckdevX/nematolahi-Ui/total.svg" alt="Downloads"></a>
   <a href="https://www.gnu.org/licenses/gpl-3.0.en.html"><img src="https://img.shields.io/badge/license-GPL%20V3-blue.svg?longCache=true" alt="License"></a>
-  <a href="https://pkg.go.dev/github.com/Nematolahi/nematolahi-ui/v3"><img src="https://pkg.go.dev/badge/github.com/Nematolahi/nematolahi-ui/v3.svg" alt="Go Reference"></a>
+  <a href="https://pkg.go.dev/github.com/mrDuckdevX/nematolahi-Ui/v3"><img src="https://pkg.go.dev/badge/github.com/mrDuckdevX/nematolahi-Ui/v3.svg" alt="Go Reference"></a>
   <a href="https://docs.nematolahi.dev"><img src="https://img.shields.io/badge/docs-docs.nematolahi.dev-22d3ee" alt="Documentation"></a>
 </p>
 
@@ -74,19 +74,19 @@ Orijinal X-UI projesinin geliştirilmiş bir çatallaması (fork) olarak inşa e
 ## Hızlı Başlangıç
 
 ```bash
-bash <(curl -Ls https://raw.githubusercontent.com/Nematolahi/nematolahi-ui/main/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/mrDuckdevX/nematolahi-Ui/main/install.sh)
 ```
 
 Belirli bir sürümü kurmak için, etiketini (ör. `v3.7.0`) ekleyin:
 
 ```bash
-bash <(curl -Ls https://raw.githubusercontent.com/Nematolahi/nematolahi-ui/main/install.sh) v3.7.0
+bash <(curl -Ls https://raw.githubusercontent.com/mrDuckdevX/nematolahi-Ui/main/install.sh) v3.7.0
 ```
 
 Sürekli güncellenen **dev** sürümünü (kararlı bir sürüm değil; `main` dalından her commit'te oluşturulan en son ön sürüm) kurmak için `dev-latest` değerini geçirin:
 
 ```bash
-bash <(curl -Ls https://raw.githubusercontent.com/Nematolahi/nematolahi-ui/main/install.sh) dev-latest
+bash <(curl -Ls https://raw.githubusercontent.com/mrDuckdevX/nematolahi-Ui/main/install.sh) dev-latest
 ```
 
 Kurulum sırasında rastgele bir kullanıcı adı, şifre ve erişim yolu oluşturulur. Kurulumdan sonra, hizmeti başlatabileceğiniz/durdurabileceğiniz, giriş bilgilerinizi görüntüleyebileceğiniz veya sıfırlayabileceğiniz, SSL sertifikalarını yönetebileceğiniz ve çok daha fazlasını yapabileceğiniz yönetim menüsünü açmak için terminalde `x-ui` komutunu çalıştırın.
@@ -146,7 +146,7 @@ docker compose --profile postgres up -d
 Docker imajı, kullanıcı başına **IP limitlerini** zorunlu kılmak için Fail2ban ile (varsayılan olarak etkindir) paketlenmiştir. Fail2ban, ihlalcileri `iptables` ile engeller ve bunun için `NET_ADMIN` yetkisine ihtiyaç duyar. `docker-compose.yml` bunu zaten `cap_add` üzerinden vermektedir; ancak konteyneri bunun yerine `docker run` ile başlatırsanız bu yetkileri kendiniz eklemelisiniz, aksi takdirde yasaklamalar günlüğe kaydedilir ancak uygulanmaz:
 
 ```bash
-docker run -d --cap-add=NET_ADMIN --cap-add=NET_RAW ... ghcr.io/Nematolahi/nematolahi-ui
+docker run -d --cap-add=NET_ADMIN --cap-add=NET_RAW ... ghcr.io/mrDuckdevX/nematolahi-Ui
 ```
 
 ## Ortam Değişkenleri (Environment Variables)
@@ -218,14 +218,14 @@ Katkılarınızı her zaman bekliyoruz. Bir sorun (issue) açmadan veya pull req
 
 <a href="https://www.star-history.com/?repos=nematolahi%2F3x-ui&type=date&legend=top-left">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=Nematolahi/nematolahi-ui&type=date&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=Nematolahi/nematolahi-ui&type=date&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=Nematolahi/nematolahi-ui&type=date&legend=top-left" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=mrDuckdevX/nematolahi-Ui&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=mrDuckdevX/nematolahi-Ui&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=mrDuckdevX/nematolahi-Ui&type=date&legend=top-left" />
  </picture>
 </a>
 
 <p align="center">
- <a href="https://www.star-history.com/Nematolahi/nematolahi-ui">
-  <picture><source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/badge?repo=Nematolahi/nematolahi-ui&type=rank&theme=dark" /><source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/badge?repo=Nematolahi/nematolahi-ui&type=rank" /><img alt="Star History Rank" src="https://api.star-history.com/badge?repo=Nematolahi/nematolahi-ui&type=rank" /></picture> <picture><source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/badge?repo=Nematolahi/nematolahi-ui&type=trending&theme=dark" /><source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/badge?repo=Nematolahi/nematolahi-ui&type=trending" /><img alt="GitHub Trending Repository of the Day" src="https://api.star-history.com/badge?repo=Nematolahi/nematolahi-ui&type=trending" /></picture>
+ <a href="https://www.star-history.com/mrDuckdevX/nematolahi-Ui">
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/badge?repo=mrDuckdevX/nematolahi-Ui&type=rank&theme=dark" /><source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/badge?repo=mrDuckdevX/nematolahi-Ui&type=rank" /><img alt="Star History Rank" src="https://api.star-history.com/badge?repo=mrDuckdevX/nematolahi-Ui&type=rank" /></picture> <picture><source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/badge?repo=mrDuckdevX/nematolahi-Ui&type=trending&theme=dark" /><source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/badge?repo=mrDuckdevX/nematolahi-Ui&type=trending" /><img alt="GitHub Trending Repository of the Day" src="https://api.star-history.com/badge?repo=mrDuckdevX/nematolahi-Ui&type=trending" /></picture>
  </a>
 </p>

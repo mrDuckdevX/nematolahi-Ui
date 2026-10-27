@@ -11,9 +11,9 @@ import (
 	"github.com/gin-contrib/sessions/cookie"
 	"github.com/gin-gonic/gin"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/database/model"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/locale"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/session"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/database/model"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/locale"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/session"
 )
 
 func newSPAFallbackTestEngine(t *testing.T) *gin.Engine {

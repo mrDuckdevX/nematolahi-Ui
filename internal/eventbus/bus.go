@@ -4,7 +4,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/logger"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/logger"
 )
 
 // DefaultBufferSize is the number of events the bus can hold before Publish starts dropping.

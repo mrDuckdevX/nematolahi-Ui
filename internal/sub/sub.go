@@ -14,12 +14,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/logger"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/util/common"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/locale"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/middleware"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/network"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/service"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/logger"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/util/common"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/locale"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/middleware"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/network"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/service"
 
 	"github.com/gin-gonic/gin"
 )

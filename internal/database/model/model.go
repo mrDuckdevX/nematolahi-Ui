@@ -9,8 +9,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/util/json_util"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/xray"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/util/json_util"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/xray"
 )
 
 // Protocol represents the protocol type for Xray inbounds.

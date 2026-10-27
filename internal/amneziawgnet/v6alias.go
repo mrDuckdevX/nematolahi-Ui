@@ -20,8 +20,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/amneziawg"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/logger"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/amneziawg"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/logger"
 )
 
 // v6Alias is one host-owned IPv6 address alias this package manages, always

@@ -12,8 +12,8 @@ import (
 
 	"github.com/robfig/cron/v3"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/database/dbtest"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/global"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/database/dbtest"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/global"
 )
 
 /*

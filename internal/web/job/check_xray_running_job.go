@@ -3,9 +3,9 @@
 package job
 
 import (
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/eventbus"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/logger"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/service"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/eventbus"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/logger"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/service"
 )
 
 // EventBus is set from web layer to publish events.

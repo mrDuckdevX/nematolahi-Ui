@@ -18,8 +18,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/database/model"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/logger"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/database/model"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/logger"
 )
 
 // SecretEntry is one named FakeTLS secret served by an mtg-multi process. Name is

@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/database/model"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/runtime"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/database/model"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/runtime"
 )
 
 type blockingResetRuntime struct {

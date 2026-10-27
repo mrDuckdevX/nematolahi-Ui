@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/logger"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/logger"
 )
 
 func TestNormalizeCongestionControl(t *testing.T) {

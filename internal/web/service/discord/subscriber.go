@@ -8,9 +8,9 @@ import (
 	"time"
 	"unicode/utf16"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/eventbus"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/logger"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/service"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/eventbus"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/logger"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/service"
 )
 
 // Subscriber handles event bus messages and forwards them to Discord.

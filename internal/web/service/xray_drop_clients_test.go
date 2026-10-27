@@ -3,7 +3,7 @@ package service
 import (
 	"testing"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/xray"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/xray"
 )
 
 func setRestartOnClientDisable(t *testing.T, value bool) {

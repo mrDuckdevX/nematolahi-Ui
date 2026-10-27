@@ -359,7 +359,7 @@ export default function SubscriptionGeneralTab({
                   <>
                     {t('pages.settings.subThemeDirDesc')}{' '}
                     <a
-                      href="https://github.com/Nematolahi/nematolahi-ui/blob/main/docs/custom-subscription-templates.md"
+                      href="https://github.com/mrDuckdevX/nematolahi-Ui/blob/main/docs/custom-subscription-templates.md"
                       target="_blank"
                       rel="noopener noreferrer"
                     >

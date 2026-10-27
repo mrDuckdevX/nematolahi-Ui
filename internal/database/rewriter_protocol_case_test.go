@@ -5,9 +5,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/config"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/database/model"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/xray"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/config"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/database/model"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/xray"
 )
 
 func TestRewriteRemovedOutboundKeysSeesAnUppercaseFreedom(t *testing.T) {

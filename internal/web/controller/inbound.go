@@ -6,13 +6,13 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/database/model"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/util/wirecodec"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/middleware"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/service"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/session"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/websocket"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/xray"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/database/model"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/util/wirecodec"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/middleware"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/service"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/session"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/websocket"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/xray"
 
 	"github.com/gin-gonic/gin"
 )

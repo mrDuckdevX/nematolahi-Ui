@@ -11,7 +11,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/database/model"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/database/model"
 )
 
 // TestRemoteDo_RejectsOversizeResponse: a node streaming a body larger than

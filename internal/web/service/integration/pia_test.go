@@ -11,9 +11,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/crypto/nodetoken"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/database/dbtest"
-	piaprotocol "github.com/Nematolahi/nematolahi-ui/v3/internal/pia"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/crypto/nodetoken"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/database/dbtest"
+	piaprotocol "github.com/mrDuckdevX/nematolahi-Ui/v3/internal/pia"
 )
 
 type fakePiaAuth struct{ token string }

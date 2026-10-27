@@ -8,7 +8,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/util/wirecodec"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/util/wirecodec"
 )
 
 // maxDecodedConfigBytes caps a decompressed request body (defense in depth on

@@ -9,7 +9,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/util/wirecodec"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/util/wirecodec"
 )
 
 // TestRemoteSendsEnvelopeWhenNodeAdvertisesCap: once a node has advertised the

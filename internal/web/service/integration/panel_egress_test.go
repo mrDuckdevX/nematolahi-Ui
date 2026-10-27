@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/util/netproxy"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/util/netproxy"
 )
 
 func recordingProxy(t *testing.T, hits *int64) *httptest.Server {

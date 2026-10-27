@@ -12,7 +12,7 @@ import (
 
 	"github.com/op/go-logging"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/config"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/config"
 
 	"gopkg.in/natefinch/lumberjack.v2"
 )

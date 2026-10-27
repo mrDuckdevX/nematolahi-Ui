@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/session"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/session"
 
 	"github.com/gin-contrib/sessions"
 	"github.com/gin-contrib/sessions/cookie"

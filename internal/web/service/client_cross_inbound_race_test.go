@@ -5,7 +5,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/database/model"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/database/model"
 )
 
 // Concurrent creates on two inbounds hold two different lockInbound mutexes,

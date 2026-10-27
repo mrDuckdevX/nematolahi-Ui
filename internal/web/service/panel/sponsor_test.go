@@ -12,8 +12,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/config"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/database/dbtest"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/config"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/database/dbtest"
 )
 
 var sponsorTestNow = time.Date(2026, 10, 15, 0, 0, 0, 0, time.UTC)

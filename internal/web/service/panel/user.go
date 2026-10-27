@@ -6,13 +6,13 @@ import (
 
 	"gorm.io/gorm"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/database"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/database/model"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/logger"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/util/crypto"
-	ldaputil "github.com/Nematolahi/nematolahi-ui/v3/internal/util/ldap"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/util/totp"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/service"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/database"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/database/model"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/logger"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/util/crypto"
+	ldaputil "github.com/mrDuckdevX/nematolahi-Ui/v3/internal/util/ldap"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/util/totp"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/service"
 )
 
 // UserService provides business logic for user management and authentication.

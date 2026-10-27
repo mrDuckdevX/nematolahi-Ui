@@ -8,8 +8,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/util/common"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/service"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/util/common"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/service"
 )
 
 type NordService struct {

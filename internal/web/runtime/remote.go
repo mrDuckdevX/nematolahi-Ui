@@ -17,13 +17,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/crypto/nodetoken"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/database/model"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/logger"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/util/netsafe"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/util/wirecodec"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/entity"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/xray"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/crypto/nodetoken"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/database/model"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/logger"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/util/netsafe"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/util/wirecodec"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/entity"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/xray"
 )
 
 const remoteHTTPTimeout = 10 * time.Second

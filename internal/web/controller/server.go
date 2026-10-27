@@ -9,14 +9,14 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/database/model"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/logger"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/util/netsafe"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/entity"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/global"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/service"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/service/panel"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/websocket"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/database/model"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/logger"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/util/netsafe"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/entity"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/global"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/service"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/service/panel"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/websocket"
 
 	"github.com/gin-gonic/gin"
 )

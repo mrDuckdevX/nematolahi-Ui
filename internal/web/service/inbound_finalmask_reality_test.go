@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/database"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/database/model"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/database"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/database/model"
 )
 
 const realityFinalMaskStream = `{"network":"tcp","security":"reality","realitySettings":{},"finalmask":{"tcp":[{"type":"fragment","settings":{"packets":"tlshello"}}]}}`

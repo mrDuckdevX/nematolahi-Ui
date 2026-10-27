@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/util/netsafe"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/util/netsafe"
 )
 
 func TestSubscriptionFetchClientBlocksPrivateDial(t *testing.T) {

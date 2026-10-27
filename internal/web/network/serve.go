@@ -5,7 +5,7 @@ import (
 	"net"
 	"net/http"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/logger"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/logger"
 )
 
 // ServeHTTP runs a panel HTTP server and records unexpected listener failures.

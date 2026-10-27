@@ -1,4 +1,4 @@
-module github.com/Nematolahi/nematolahi-ui/v3
+module github.com/mrDuckdevX/nematolahi-Ui/v3
 
 go 1.27.1
 

@@ -3,7 +3,7 @@ package service
 import (
 	"testing"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/database/model"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/database/model"
 )
 
 func TestClientDelete_CleansNodeBaselines(t *testing.T) {

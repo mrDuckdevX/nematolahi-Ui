@@ -8,13 +8,13 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/amneziawg"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/amneziawgnet"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/database/model"
-	xuilogger "github.com/Nematolahi/nematolahi-ui/v3/internal/logger"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/testpg"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/util/json_util"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/xray"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/amneziawg"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/amneziawgnet"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/database/model"
+	xuilogger "github.com/mrDuckdevX/nematolahi-Ui/v3/internal/logger"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/testpg"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/util/json_util"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/xray"
 
 	"github.com/op/go-logging"
 )

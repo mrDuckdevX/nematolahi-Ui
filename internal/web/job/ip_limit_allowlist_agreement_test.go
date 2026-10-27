@@ -3,7 +3,7 @@ package job
 import (
 	"testing"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/entity"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/entity"
 )
 
 // Save-time validation and scan-time parsing must accept exactly the same set:

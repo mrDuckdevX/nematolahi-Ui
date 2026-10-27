@@ -5,9 +5,9 @@ package controller
 import (
 	"net/http"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/logger"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/locale"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/session"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/logger"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/locale"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/session"
 
 	"github.com/gin-gonic/gin"
 )
