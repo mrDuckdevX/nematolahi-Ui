@@ -4,7 +4,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/database/dbtest"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/database/dbtest"
 )
 
 // A panel restarts with an empty snapshot until the @2s ticker fires, and a

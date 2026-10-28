@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/database/dbtest"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/database/dbtest"
 )
 
 // A box with no IPv6 route spends 3s per lookup service, and a status sample

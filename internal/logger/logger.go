@@ -1,4 +1,4 @@
-// Package logger provides logging functionality for the 3x-ui panel with
+// Package logger provides logging functionality for the nematolahi-ui panel with
 // dual-backend logging (console/syslog and file) and buffered log storage for web UI.
 package logger
 
@@ -12,14 +12,14 @@ import (
 
 	"github.com/op/go-logging"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/config"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/config"
 
 	"gopkg.in/natefinch/lumberjack.v2"
 )
 
 const (
 	maxLogBufferSize = 10240                 // Maximum log entries kept in memory
-	logFileName      = "3xui.log"            // Log file name
+	logFileName      = "nematolahi.log"            // Log file name
 	timeFormat       = "2006/01/02 15:04:05" // Log timestamp format
 
 	// On-disk rotation limits — single file capped, old segments pruned automatically.

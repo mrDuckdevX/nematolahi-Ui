@@ -7,9 +7,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/database/model"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/mtproto"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/runtime"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/database/model"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/mtproto"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/runtime"
 )
 
 func mtgConfigPath(t *testing.T, inboundId int) string {

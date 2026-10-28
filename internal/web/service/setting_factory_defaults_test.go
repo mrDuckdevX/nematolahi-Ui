@@ -4,8 +4,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/util/reflect_util"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/entity"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/util/reflect_util"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/entity"
 )
 
 func allSettingJSONTags(t *testing.T) map[string]bool {

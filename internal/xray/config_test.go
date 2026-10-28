@@ -3,7 +3,7 @@ package xray
 import (
 	"testing"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/util/json_util"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/util/json_util"
 )
 
 func makeConfig() *Config {

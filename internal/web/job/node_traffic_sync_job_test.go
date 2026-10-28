@@ -4,7 +4,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/database/model"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/database/model"
 )
 
 func TestAtomicBool_DefaultIsFalse(t *testing.T) {

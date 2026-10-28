@@ -3,7 +3,7 @@ package runtime
 import (
 	"context"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/database/model"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/database/model"
 )
 
 type Runtime interface {

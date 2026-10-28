@@ -11,8 +11,8 @@ export interface InstallOptions {
   webBasePath: string;
 }
 
-const REPO_RAW = 'https://raw.githubusercontent.com/Nematolahi/nematolahi-ui/master/install.sh';
-const IMAGE = 'ghcr.io/Nematolahi/nematolahi-ui:latest';
+const REPO_RAW = 'https://raw.githubusercontent.com/mrDuckdevX/nematolahi-Ui/master/install.sh';
+const IMAGE = 'ghcr.io/mrDuckdevX/nematolahi-Ui:latest';
 
 function isLatest(version: string): boolean {
   const v = version.trim().toLowerCase();

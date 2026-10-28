@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/eventbus"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/eventbus"
 )
 
 func TestRateLimiterAllow(t *testing.T) {

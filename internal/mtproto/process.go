@@ -1,4 +1,4 @@
-// Package mtproto manages mtg-multi (github.com/nematolahi/mtg-multi) sidecar
+// Package mtproto manages mtg-multi (github.com/mrDuckdevX/mtg-multi) sidecar
 // processes that serve MTProto FakeTLS proxies. Xray-core has no mtproto
 // protocol, so mtproto inbounds are run as standalone mtg processes — one
 // process per inbound, each serving every active client's secret through the
@@ -20,8 +20,8 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/config"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/logger"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/config"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/logger"
 )
 
 // GetBinaryName returns the mtg binary filename for the current OS and arch,

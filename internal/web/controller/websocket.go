@@ -6,9 +6,9 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/logger"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/service/panel"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/session"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/logger"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/service/panel"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/session"
 
 	"github.com/gin-gonic/gin"
 	ws "github.com/gorilla/websocket"

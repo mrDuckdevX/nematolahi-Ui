@@ -3,7 +3,7 @@ package xray
 import (
 	"bytes"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/util/json_util"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/util/json_util"
 )
 
 // InboundConfig represents an Xray inbound configuration.

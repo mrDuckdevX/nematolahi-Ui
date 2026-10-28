@@ -9,10 +9,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/crypto/nodetoken"
-	piaprotocol "github.com/Nematolahi/nematolahi-ui/v3/internal/pia"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/util/wireguard"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/service"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/crypto/nodetoken"
+	piaprotocol "github.com/mrDuckdevX/nematolahi-Ui/v3/internal/pia"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/util/wireguard"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/service"
 )
 
 var piaTokenAAD = []byte("settings/pia_token")

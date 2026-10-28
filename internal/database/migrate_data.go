@@ -11,8 +11,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/database/model"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/xray"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/database/model"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/xray"
 
 	"gorm.io/driver/postgres"
 	"gorm.io/driver/sqlite"
@@ -337,7 +337,7 @@ func PrepareSQLiteForMigration(dbPath string) error {
 
 	for _, table := range []string{"users", "settings", "inbounds"} {
 		if !sqliteTableExists(sqlDB, table) {
-			return fmt.Errorf("not a 3x-ui panel database: required table %q is missing", table)
+			return fmt.Errorf("not a nematolahi-ui panel database: required table %q is missing", table)
 		}
 	}
 	for _, m := range migrationModels() {

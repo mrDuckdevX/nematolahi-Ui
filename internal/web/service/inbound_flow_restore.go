@@ -3,7 +3,7 @@ package service
 import (
 	"encoding/json"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/database/model"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/database/model"
 
 	"gorm.io/gorm"
 )

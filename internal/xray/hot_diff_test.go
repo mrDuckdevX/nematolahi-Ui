@@ -5,8 +5,8 @@ import (
 	"strings"
 	"testing"
 
-	xuilogger "github.com/Nematolahi/nematolahi-ui/v3/internal/logger"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/util/json_util"
+	xuilogger "github.com/mrDuckdevX/nematolahi-Ui/v3/internal/logger"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/util/json_util"
 
 	"github.com/op/go-logging"
 )

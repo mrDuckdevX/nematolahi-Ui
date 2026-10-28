@@ -3,7 +3,7 @@
 > Navigation map for contributors and AI coding agents (referenced from `CLAUDE.md`).
 > Goal: jump to the right file in one hop instead of grepping the whole tree.
 > Tracks the `main` branch — paths reflect the latest changes, so verify against the live
-> tree rather than a pinned release (Go module `github.com/Nematolahi/nematolahi-ui/v3`).
+> tree rather than a pinned release (Go module `github.com/mrDuckdevX/nematolahi-Ui/v3`).
 >
 > **How to use this file:** read "Mental model" + "Request lifecycle" first, then
 > use the **Symptom → File index** to locate work. Respect the **Layering rules**
@@ -22,7 +22,7 @@ separate HTTP server serves **subscription links** to end users.
 The panel supervises **managed child processes**: Xray-core itself and — when MTProto
 inbounds exist — a dedicated child proxy binary:
 
-- **`mtg-multi` for MTProto inbounds** (`github.com/nematolahi/mtg-multi`, a multi-secret fork
+- **`mtg-multi` for MTProto inbounds** (`github.com/mrDuckdevX/mtg-multi`, a multi-secret fork
   built from source; `internal/mtproto/`): One process per inbound serves every attached
   client's FakeTLS secret through the fork's `[secrets]` section, plus optional per-client
   sponsored-channel ad-tags via `[secret-ad-tags]`. A client or ad-tag edit is hot-applied via
@@ -288,8 +288,8 @@ node heartbeat every 5s, periodic traffic resets (hourly/daily/weekly/monthly). 
 ├── media/                    # README images
 │
 ├── Dockerfile / docker-compose.yml / DockerEntrypoint.sh / DockerInit.sh   # Container build/run
-├── install.sh / update.sh / x-ui.sh                        # VPS install + management CLI
-├── x-ui.service.*  / x-ui.rc                               # systemd units (debian/rhel/arch) + rc script
+├── install.sh / update.sh / nematolahi-ui.sh                        # VPS install + management CLI
+├── nematolahi-ui.service.*  / nematolahi-ui.rc                               # systemd units (debian/rhel/arch) + rc script
 ├── windows_files/                                          # Windows service support
 └── .github/workflows/        # CI: ci.yml, codeql.yml, docker.yml, release.yml,
                               #     mutation.yml, cleanup_caches.yml, claude-pr-review.yml,
@@ -593,7 +593,7 @@ only - it changes no code), `claude-issue-analyst.yml` (issue triage).
 
 ## 10. Gotchas & conventions
 
-- **Module path is `.../v3`.** Internal imports use `github.com/Nematolahi/nematolahi-ui/v3/internal/...`.
+- **Module path is `.../v3`.** Internal imports use `github.com/mrDuckdevX/nematolahi-Ui/v3/internal/...`.
 - **SQLite vs Postgres.** Default is SQLite at `{XUI_DB_FOLDER}/x-ui.db`. Postgres via
   `XUI_DB_TYPE=postgres` + `XUI_DB_DSN`. Some SQL paths are dialect-aware (`database/dialect.go`);
   test both when touching raw queries (there are `*_scale_postgres_test.go` suites).

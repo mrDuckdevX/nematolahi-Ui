@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/logger"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/logger"
 )
 
 func TestNormalizeCongestionControl(t *testing.T) {
@@ -67,7 +67,7 @@ func TestLogfUsesCommonLoggerAndHonorsThreshold(t *testing.T) {
 				}
 			}
 			if !strings.Contains(logs, "inbound 99001 (log-test)") {
-				t.Fatal("TUIC event was not written through the shared 3x-ui logger")
+				t.Fatal("TUIC event was not written through the shared nematolahi-ui logger")
 			}
 		})
 	}

@@ -8,8 +8,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/eventbus"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/locale"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/eventbus"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/locale"
 )
 
 type fixedTgLang struct{}

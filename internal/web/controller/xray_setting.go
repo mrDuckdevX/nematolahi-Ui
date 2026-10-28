@@ -8,12 +8,12 @@ import (
 	"strings"
 	"time"
 
-	piaprotocol "github.com/Nematolahi/nematolahi-ui/v3/internal/pia"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/util/common"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/service"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/service/integration"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/service/outbound"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/xray"
+	piaprotocol "github.com/mrDuckdevX/nematolahi-Ui/v3/internal/pia"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/util/common"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/service"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/service/integration"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/service/outbound"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/xray"
 
 	"github.com/gin-gonic/gin"
 )

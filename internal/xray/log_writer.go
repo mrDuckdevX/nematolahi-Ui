@@ -6,7 +6,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/logger"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/logger"
 )
 
 // Compiled once at package load: Write runs on every line Xray emits, so

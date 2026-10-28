@@ -1,4 +1,4 @@
-// Package locale provides internationalization (i18n) support for the 3x-ui web panel,
+// Package locale provides internationalization (i18n) support for the nematolahi-ui web panel,
 // including translation loading, localization, and middleware for web and bot interfaces.
 package locale
 
@@ -8,7 +8,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/logger"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/logger"
 
 	"github.com/gin-gonic/gin"
 	"github.com/nicksnyder/go-i18n/v2/i18n"

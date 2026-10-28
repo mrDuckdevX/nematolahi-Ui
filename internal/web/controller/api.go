@@ -4,16 +4,16 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/database/model"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/middleware"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/service/panel"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/service/tgbot"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/session"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/database/model"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/middleware"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/service/panel"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/service/tgbot"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/session"
 
 	"github.com/gin-gonic/gin"
 )
 
-// APIController handles the main API routes for the 3x-ui panel, including inbounds and server management.
+// APIController handles the main API routes for the nematolahi-ui panel, including inbounds and server management.
 type APIController struct {
 	BaseController
 	inboundController     *InboundController

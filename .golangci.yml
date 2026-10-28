@@ -46,7 +46,7 @@ formatters:
   settings:
     goimports:
       local-prefixes:
-        - github.com/Nematolahi/nematolahi-ui
+        - github.com/mrDuckdevX/nematolahi-Ui
   exclusions:
     paths:
       - frontend

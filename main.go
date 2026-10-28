@@ -1,4 +1,4 @@
-// Package main is the entry point for the 3x-ui web panel application.
+// Package main is the entry point for the nematolahi-ui web panel application.
 // It initializes the database, web server, and handles command-line operations for managing the panel.
 package main
 
@@ -15,19 +15,19 @@ import (
 	"syscall"
 	_ "unsafe"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/config"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/crypto/nodetoken"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/database"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/logger"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/sub"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/tunnelmonitor"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/util/crypto"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/util/sys"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/global"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/service"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/service/panel"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/service/tgbot"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/config"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/crypto/nodetoken"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/database"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/logger"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/sub"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/tunnelmonitor"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/util/crypto"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/util/sys"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/global"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/service"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/service/panel"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/service/tgbot"
 
 	"github.com/joho/godotenv"
 	"github.com/op/go-logging"
@@ -70,7 +70,7 @@ func initNodeTokenCrypto() error {
 	return nil
 }
 
-// runWebServer initializes and starts the web server for the 3x-ui panel.
+// runWebServer initializes and starts the web server for the nematolahi-ui panel.
 func runWebServer() {
 	log.Printf("Starting %v %v", config.GetName(), config.GetPanelVersion())
 
@@ -548,7 +548,7 @@ func GetApiToken(getApiToken bool, tokenName, tokenScope string) {
 	fmt.Println("apiToken:", created.Token)
 }
 
-// migrateDb performs database migration operations for the 3x-ui panel.
+// migrateDb performs database migration operations for the nematolahi-ui panel.
 func migrateDb() {
 	inboundService := service.InboundService{}
 
@@ -578,7 +578,7 @@ func loadServiceEnvFile() {
 	}
 }
 
-// main is the entry point of the 3x-ui application.
+// main is the entry point of the nematolahi-ui application.
 // It parses command-line arguments to run the web server, migrate database, or update settings.
 func main() {
 	loadServiceEnvFile()

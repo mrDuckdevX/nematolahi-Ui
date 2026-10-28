@@ -12,8 +12,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/config"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/database/dbtest"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/config"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/database/dbtest"
 )
 
 var sponsorTestNow = time.Date(2026, 10, 15, 0, 0, 0, 0, time.UTC)
@@ -308,10 +308,10 @@ func TestGetSponsorsDebugReadsLocalCheckout(t *testing.T) {
 	if err := os.MkdirAll(local, 0o700); err != nil {
 		t.Fatal(err)
 	}
-	if err := os.Mkdir(filepath.Join(root, "3x-ui"), 0o700); err != nil {
+	if err := os.Mkdir(filepath.Join(root, "nematolahi-ui"), 0o700); err != nil {
 		t.Fatal(err)
 	}
-	t.Chdir(filepath.Join(root, "3x-ui"))
+	t.Chdir(filepath.Join(root, "nematolahi-ui"))
 	write := func(id string) {
 		t.Helper()
 		body := `{"sponsors":[{"id":"` + id + `","slots":["page"],"until":"2099-01-01T00:00:00Z","link":"https://a.example/"}]}`

@@ -3,7 +3,7 @@ package job
 import (
 	"time"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/eventbus"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/eventbus"
 
 	"github.com/shirou/gopsutil/v4/cpu"
 )

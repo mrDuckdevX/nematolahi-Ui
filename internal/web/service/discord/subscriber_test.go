@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/eventbus"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/eventbus"
 )
 
 func TestFormatEmbed_OutboundDownAndUp(t *testing.T) {

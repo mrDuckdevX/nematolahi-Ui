@@ -7,7 +7,7 @@ import (
 )
 
 // SkewWindows is how many 30s steps around now VerifyWithSkew accepts.
-// Standard TOTP clock-drift tolerance, see Nematolahi/nematolahi-ui#1.
+// Standard TOTP clock-drift tolerance, see mrDuckdevX/nematolahi-Ui#1.
 const SkewWindows = 1
 
 // VerifyWithSkew accepts the code for the current step plus/minus SkewWindows.

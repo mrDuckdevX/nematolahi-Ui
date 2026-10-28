@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/util/json_util"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/util/json_util"
 )
 
 // rulesOf unmarshals a router config and returns its rules for assertions.

@@ -1,4 +1,4 @@
-module github.com/Nematolahi/nematolahi-ui/v3
+module github.com/mrDuckdevX/nematolahi-Ui/v3
 
 go 1.27.1
 
@@ -30,10 +30,10 @@ require (
 	github.com/xlzd/gotp v0.1.0
 	github.com/xtls/xray-core v1.260327.1-0.20260930074004-b26a91de4f32
 	go.uber.org/atomic v1.12.0
-	golang.org/x/crypto v0.57.0
-	golang.org/x/net v0.59.0
-	golang.org/x/sys v0.48.0
-	golang.org/x/text v0.42.0
+	golang.org/x/crypto v0.58.0
+	golang.org/x/net v0.61.0
+	golang.org/x/sys v0.49.0
+	golang.org/x/text v0.43.0
 	google.golang.org/grpc v1.86.0-dev
 	google.golang.org/protobuf v1.36.12
 	gopkg.in/natefinch/lumberjack.v2 v2.2.1

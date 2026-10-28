@@ -14,11 +14,11 @@ import (
 
 	"gorm.io/gorm"
 
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/database"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/database/model"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/util/common"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/util/crypto"
-	"github.com/Nematolahi/nematolahi-ui/v3/internal/web/runtime"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/database"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/database/model"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/util/common"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/util/crypto"
+	"github.com/mrDuckdevX/nematolahi-Ui/v3/internal/web/runtime"
 )
 
 var masterClientCredentialMu sync.Mutex
@@ -53,7 +53,7 @@ func (s *SettingService) EnsureNodeMtlsCA() (crypto.CertKeyPEM, error) {
 	if certPem != "" || keyPem != "" {
 		return crypto.CertKeyPEM{}, common.NewError("node mTLS CA is incomplete: one of cert/key is missing; refusing to regenerate")
 	}
-	ca, err := crypto.GenerateNodeCA("3x-ui node mTLS CA")
+	ca, err := crypto.GenerateNodeCA("nematolahi-ui node mTLS CA")
 	if err != nil {
 		return crypto.CertKeyPEM{}, err
 	}
@@ -126,7 +126,7 @@ func (s *SettingService) EnsureMasterClientCert() (crypto.CertKeyPEM, error) {
 	if err != nil {
 		return crypto.CertKeyPEM{}, err
 	}
-	client, err := crypto.IssueClientCert(ca, "3x-ui master")
+	client, err := crypto.IssueClientCert(ca, "nematolahi-ui master")
 	if err != nil {
 		return crypto.CertKeyPEM{}, err
 	}
