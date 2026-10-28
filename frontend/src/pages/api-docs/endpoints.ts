@@ -94,9 +94,9 @@ const outboundSubscriptionBodyParams: EndpointParam[] = [
     name: 'userAgent',
     in: 'body (form)',
     type: 'string',
-    desc: 'Custom User-Agent sent when fetching this subscription. Defaults to "nematolahi-sub/1.0".',
+    desc: 'Custom User-Agent sent when fetching this subscription. Defaults to "nematolahi-ui-outbound-sub/1.0".',
     optional: true,
-    defaultValue: 'nematolahi-sub/1.0',
+    defaultValue: 'nematolahi-ui-outbound-sub/1.0',
   },
   {
     name: 'updateInterval',

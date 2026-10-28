@@ -4487,7 +4487,7 @@ export const SCHEMAS: Record<string, unknown> = {
         "type": "string"
       },
       "link": {
-        "example": "https://acme.example/?utm_source=Nematolahi-UI",
+        "example": "https://acme.example/?utm_source=nematolahi-ui",
         "type": "string"
       },
       "logo": {
